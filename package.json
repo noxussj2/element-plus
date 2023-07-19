@@ -1,22 +1,23 @@
 {
-  "name": "element-plus",
-  "icon": "images/element-plus.png",
-  "displayName": "Element Plus",
-  "description": "Element Plus Snippets",
-  "version": "0.0.4",
-  "engines": {
-    "vscode": "^1.46.0"
-  },
-  "categories": [
-    "Snippets"
-  ],
-  "contributes": {
-    "snippets": [
-      {
-        "path": "./snippets/snippets.code-snippets"
-      }
-    ]
-  },
-  "publisher": "noxussj",
-  "license": "MIT"
+    "name": "element-plus",
+    "repository": "https://github.com/noxussj2/element-plus",
+    "icon": "images/element-plus.png",
+    "displayName": "Element Plus",
+    "description": "Element Plus Snippets",
+    "version": "0.0.5",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    },
+    "publisher": "noxussj",
+    "license": "MIT"
 }
