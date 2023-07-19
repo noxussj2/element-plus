@@ -1,4 +1,13 @@
 {
+    // 基础组件
+    "el-button": {
+        "prefix": "el-button",
+        "body": [
+            "<el-button>Default$1</el-button>",
+        ],
+        "description": "按钮组件",
+    },
+
     "el-select": {
         "prefix": "el-select",
         "body": [
