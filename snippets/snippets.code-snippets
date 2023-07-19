@@ -1,0 +1,12 @@
+{
+    "el-select": {
+        "prefix": "el-select",
+        "body": [
+            "<el-select v-model=\"value\" placeholder=\"请选择\">",
+            "    <el-option label=\"选项1\" value=\"1\" />",
+            "    <el-option label=\"选项2\" value=\"2\" />",
+            "</el-select>"
+        ],
+        "description": "下拉框组件",
+    }
+}
