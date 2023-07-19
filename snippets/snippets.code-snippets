@@ -1,21 +1,287 @@
 {
-    // 基础组件
+    /**
+     * Basic 基础组件
+     */
     "el-button": {
         "prefix": "el-button",
+        "body": ["<el-button>${1:Default}</el-button>"],
+        "description": "Button 按钮"
+    },
+
+    "el-row": {
+        "prefix": "el-row",
+        "body": ["<el-row>$1</el-row>"],
+        "description": "Layout 行布局"
+    },
+
+    "el-col": {
+        "prefix": "el-col",
+        "body": ["<el-col>$1</el-col>"],
+        "description": "Layout 列布局"
+    },
+
+    "el-link": {
+        "prefix": "el-link",
+        "body": ["<el-link href=\"${2:https://element-plus.org}\" target=\"_blank\">${1:default}</el-link>"],
+        "description": "Link 链接"
+    },
+
+    "el-scrollbar": {
+        "prefix": "el-scrollbar",
+        "body": ["<el-scrollbar height=\"400px\">$1</el-scrollbar>"],
+        "description": "Scrollbar 滚动条"
+    },
+
+    /**
+     * Form 表单组件
+     */
+    "el-checkbox": {
+        "prefix": "el-checkbox",
         "body": [
-            "<el-button>Default$1</el-button>",
+            "<el-checkbox-group v-model=\"${1:checkList}\">",
+            "    <el-checkbox label=\"Option 1\" />",
+            "    <el-checkbox label=\"Option 2\" />",
+            "    <el-checkbox label=\"Option 3\" />",
+            "</el-checkbox-group>"
         ],
-        "description": "按钮组件",
+        "description": "Checkbox 多选框"
+    },
+
+    "el-date-picker": {
+        "prefix": "el-date-picker",
+        "body": ["<el-date-picker v-model=\"${1:value}\" type=\"date\" placeholder=\"请选择日期\" />"],
+        "description": "Date Picker 日期选择器"
+    },
+
+    "el-date-picker--year": {
+        "prefix": "el-date-picker--year",
+        "body": ["<el-date-picker v-model=\"${1:value}\" type=\"year\" placeholder=\"请选择年份\" />"],
+        "description": "Date Picker 日期选择器（年）"
+    },
+
+    "el-date-picker--month": {
+        "prefix": "el-date-picker--month",
+        "body": ["<el-date-picker v-model=\"${1:value}\" type=\"month\" placeholder=\"请选择月份\" />"],
+        "description": "Date Picker 日期选择器（月）"
+    },
+
+    "el-date-picker--daterange": {
+        "prefix": "el-date-picker--daterange",
+        "body": ["<el-date-picker v-model=\"${1:value}\" type=\"daterange\" range-separator=\"至\" start-placeholder=\"开始日期\" end-placeholder=\"结束日期\" />"],
+        "description": "Date Picker 日期选择器（范围）"
+    },
+
+    "el-date-picker--datetime": {
+        "prefix": "el-date-picker--datetime",
+        "body": ["<el-date-picker v-model=\"${1:value}\" type=\"datetime\" placeholder=\"请选择日期时间\" />"],
+        "description": "Date Picker 日期选择器（时间）"
+    },
+
+    "el-form": {
+        "prefix": "el-form",
+        "body": [
+            "<el-form ref=\"formRef\" :model=\"form\" label-width=\"auto\"> ",
+            "    <el-form-item label=\"Activity name\" prop=\"name\">A</el-form-item>",
+            "    <el-form-item label=\"Activity zone\" prop=\"zone\">B</el-form-item>",
+            "    <el-form-item label=\"Activity time\" prop=\"time\">C</el-form-item>",
+            "</el-form>"
+        ],
+        "description": "Form 表单"
+    },
+
+    "el-input": {
+        "prefix": "el-input",
+        "body": ["<el-input v-model=\"${1:input}\" placeholder=\"请输入\" />"],
+        "description": "Input 输入框"
+    },
+
+    "el-input--password": {
+        "prefix": "el-input--password",
+        "body": ["<el-input v-model=\"${1:input}\" type=\"password\" placeholder=\"请输入\" show-password />"],
+        "description": "Input 输入框（密码）"
+    },
+
+    "el-input--textarea": {
+        "prefix": "el-input--textarea",
+        "body": ["<el-input v-model=\"${1:textarea1}\" :rows=\"5\" type=\"textarea\" placeholder=\"请输入\" />"],
+        "description": "Input 输入框（文本域）"
+    },
+
+    "el-radio": {
+        "prefix": "el-radio",
+        "body": [
+            "<el-radio-group v-model=\"${1:radio}\">",
+            "    <el-radio label=\"A\">Option A</el-radio>",
+            "    <el-radio label=\"B\">Option B</el-radio>",
+            "    <el-radio label=\"C\">Option C</el-radio>",
+            "</el-radio-group>"
+        ],
+        "description": "Radio 单选框"
     },
 
     "el-select": {
         "prefix": "el-select",
         "body": [
             "<el-select v-model=\"value\" placeholder=\"请选择\">",
-            "    <el-option label=\"选项1\" value=\"1\" />",
-            "    <el-option label=\"选项2\" value=\"2\" />",
+            "    <el-option label=\"Options1\" value=\"1\" />",
+            "    <el-option label=\"Options2\" value=\"2\" />",
             "</el-select>"
         ],
-        "description": "下拉框组件",
+        "description": "Select 选择器"
+    },
+
+    "el-select--multiple": {
+        "prefix": "el-select--multiple",
+        "body": [
+            "<el-select v-model=\"value\" multiple collapse-tags placeholder=\"请选择\">",
+            "    <el-option label=\"Options1\" value=\"1\" />",
+            "    <el-option label=\"Options2\" value=\"2\" />",
+            "</el-select>"
+        ],
+        "description": "Select 选择器（多选）"
+    },
+
+    "el-switch": {
+        "prefix": "el-switch",
+        "body": ["<el-switch v-model=\"${1:value}\" />"],
+        "description": "Switch 开关"
+    },
+
+    "el-time-picker": {
+        "prefix": "el-time-picker",
+        "body": ["<el-time-picker v-model=\"${1:value}\" placeholder=\"请选择时间\" />"],
+        "description": "Time Picker 时间选择器"
+    },
+
+    "el-time-select": {
+        "prefix": "el-time-select",
+        "body": ["<el-time-select v-model=\"${1:value}\" start=\"08:30\" step=\"00:15\" end=\"18:30\" placeholder=\"请选择时间\" />"],
+        "description": "Time Select 时间选择器"
+    },
+
+    /**
+     * Data 数据展示
+     */
+    "el-calendar": {
+        "prefix": "el-calendar",
+        "body": ["<el-calendar v-model=\"${1:value}\" />"],
+        "description": "Calendar 日历"
+    },
+
+    "el-carousel": {
+        "prefix": "el-carousel",
+        "body": [
+            "<el-carousel trigger=\"click\" height=\"150px\">",
+            "    <el-carousel-item> container1 </el-carousel-item>",
+            "    <el-carousel-item> container2 </el-carousel-item>",
+            "    <el-carousel-item> container3 </el-carousel-item>",
+            "</el-carousel>"
+        ],
+        "description": "Carousel 走马灯"
+    },
+
+    "el-image": {
+        "prefix": "el-image",
+        "body": ["<el-image :src=\"${1:url}\" :preview-src-list=\"[${1:url}]\" fit=\"cover\" />"],
+        "description": "Image 图片"
+    },
+
+    "el-pagination": {
+        "prefix": "el-pagination",
+        "body": [
+            "<el-pagination",
+            "    v-model:current-page=\"currentPage\"",
+            "    v-model:page-size=\"pageSize\"",
+            "    :page-sizes=\"[100, 200, 300, 400]\"",
+            "    background",
+            "    layout=\"total, sizes, prev, pager, next, jumper\"",
+            "    :total=\"400\"",
+            "    @size-change=\"handleSizeChange\"",
+            "    @current-change=\"handleCurrentChange\"",
+            "/>"
+        ],
+        "description": "Pagination 分页"
+    },
+
+    "el-table": {
+        "prefix": "el-table",
+        "body": [
+            "<el-table :data=\"tableData\" :style=\"{ width: '100%' }\" >",
+            "    <el-table-column prop=\"date\" label=\"Date\" width=\"180\" />",
+            "    <el-table-column prop=\"name\" label=\"Name\" width=\"180\" />",
+            "    <el-table-column prop=\"address\" label=\"Address\" />",
+            "</el-table>"
+        ],
+        "description": "Table 表格"
+    },
+
+    "el-tag": {
+        "prefix": "el-tag",
+        "body": [
+            "<el-tag :style=\"{ marginRight: '6px' }\">Tag 1</el-tag>",
+            "<el-tag :style=\"{ marginRight: '6px' }\" type=\"success\">Tag 2</el-tag>",
+            "<el-tag :style=\"{ marginRight: '6px' }\" type=\"info\">Tag 3</el-tag>",
+            "<el-tag :style=\"{ marginRight: '6px' }\" type=\"warning\">Tag 4</el-tag>",
+            "<el-tag :style=\"{ marginRight: '6px' }\" type=\"danger\">Tag 5</el-tag>"
+        ],
+        "description": "Tag 标签"
+    },
+
+    /**
+     * Navigation 导航
+     */
+    "el-breadcrumb": {
+        "prefix": "el-breadcrumb",
+        "body": [
+            "<el-breadcrumb separator=\"/\">",
+            "    <el-breadcrumb-item :to=\"{ path: '/' }\">homepage</el-breadcrumb-item>",
+            "    <el-breadcrumb-item><a href=\"/\">promotion management</a></el-breadcrumb-item>",
+            "    <el-breadcrumb-item>promotion list</el-breadcrumb-item>",
+            "    <el-breadcrumb-item>promotion detail</el-breadcrumb-item>",
+            "</el-breadcrumb>"
+        ],
+        "description": "Breadcrumb 面包屑"
+    },
+
+    "el-tabs": {
+        "prefix": "el-tabs",
+        "body": [
+            "<el-tabs v-model=\"activeName\" class=\"demo-tabs\" @tab-click=\"handleClick\">",
+            "    <el-tab-pane label=\"User\" name=\"first\">User</el-tab-pane>",
+            "    <el-tab-pane label=\"Config\" name=\"second\">Config</el-tab-pane>",
+            "    <el-tab-pane label=\"Role\" name=\"third\">Role</el-tab-pane>",
+            "    <el-tab-pane label=\"Task\" name=\"fourth\">Task</el-tab-pane>",
+            "</el-tabs>"
+        ],
+        "description": "Tabs 标签页"
+    },
+
+    /**
+     * Feedback 反馈组件
+     */
+    "el-dialog": {
+        "prefix": "el-dialog",
+        "body": [
+            "<el-dialog v-model=\"${1:show}\" title=\"Shipping address\">",
+            "    <main>container</main>",
+            "    <template #footer>",
+            "        <span class=\"dialog-footer\">",
+            "            <el-button @click=\"${1:show} = false\">Cancel</el-button>",
+            "            <el-button type=\"primary\" @click=\"${1:show} = false\"> Confirm </el-button>",
+            "        </span>",
+            "    </template>",
+            "</el-dialog>"
+        ],
+        "description": "Dialog 对话框"
+    },
+
+    "el-drawer": {
+        "prefix": "el-drawer",
+        "body": [
+            "<el-drawer v-model=\"${1:show}\" title=\"I have a nested table inside!\" direction=\"rtl\" size=\"50%\">",
+            "    <main>container</main>",
+            "</el-drawer>"
+        ],
+        "description": "Drawer 抽屉"
     }
 }
