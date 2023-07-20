@@ -1,9 +1,3 @@
-<style>
-    pre {
-        background-color: #161618 !important;
-    }
-</style>
-
 <p align="center">
   <img width="300px" src="https://user-images.githubusercontent.com/10731096/95823103-9ce15780-0d5f-11eb-8010-1bd1b5910d4f.png">
 </p>
@@ -110,13 +104,20 @@
 
 `el-checkbox`
 
-```html
+<pre style="background:#161618"><code data-line="115" class="code-line language-html" dir="auto"><div><span class="hljs-tag">&lt;<span class="hljs-name">el-checkbox-group</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"checkList"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">el-checkbox</span> <span class="hljs-attr">label</span>=<span class="hljs-string">"Option 1"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">el-checkbox</span> <span class="hljs-attr">label</span>=<span class="hljs-string">"Option 2"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">el-checkbox</span> <span class="hljs-attr">label</span>=<span class="hljs-string">"Option 3"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">el-checkbox-group</span>&gt;</span>
+</div></code></pre>
+
+<!-- ```html
 <el-checkbox-group v-model="checkList">
     <el-checkbox label="Option 1" />
     <el-checkbox label="Option 2" />
     <el-checkbox label="Option 3" />
 </el-checkbox-group>
-```
+``` -->
 
 `el-date-picker`
 
