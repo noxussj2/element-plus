@@ -102,7 +102,7 @@
 
 ### Form 表单组件
 
-`el-checkbox`
+`el-checkbox2`
 
 <pre style="background:#161618"><code data-line="115" class="code-line language-html" dir="auto"><div><span class="hljs-tag">&lt;<span class="hljs-name">el-checkbox-group</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"checkList"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">el-checkbox</span> <span class="hljs-attr">label</span>=<span class="hljs-string">"Option 1"</span> /&gt;</span>
