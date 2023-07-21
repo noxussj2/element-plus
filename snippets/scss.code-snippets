@@ -1,0 +1,7 @@
+{
+    "background⚡": {
+        "prefix": "background",
+        "body": ["background: url('@/assets/$1.png');"],
+        "description": "background"
+    }
+}

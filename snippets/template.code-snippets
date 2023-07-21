@@ -1,0 +1,13 @@
+{
+    "v-for⚡": {
+        "prefix": "v-for",
+        "body": ["v-for=\"(item, index) in $1\" :key=\"index\""],
+        "description": "v-for"
+    },
+
+    "img⚡": {
+        "prefix": "img",
+        "body": ["<img alt=\"\" src=\"@/assets/$1.png\" />"],
+        "description": "img"
+    }
+}

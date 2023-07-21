@@ -1,0 +1,67 @@
+{
+    "componentsImport⚡": {
+        "prefix": "componentsImport⚡",
+        "body": ["import $2 from '@/components/$1/index.vue'"],
+        "description": "componentsImport⚡"
+    },
+
+    "props⚡": {
+        "prefix": "props",
+        "body": ["import { PropType } from 'vue'", "", "const props = defineProps({", "    data: {", "        type: String,", "        default: ''", "    }", "})"],
+        "description": "props"
+    },
+
+    "propsType⚡": {
+        "prefix": "propsType",
+        "body": [
+            "import { PropType } from 'vue'",
+            "",
+            "interface Data {",
+            "    name: string",
+            "    value: string",
+            "}",
+            "",
+            "const props = defineProps({",
+            "    data: {",
+            "        type: Array as PropType<Data[]>,",
+            "        default: () => []",
+            "    }",
+            "})"
+        ],
+        "description": "propsType"
+    },
+
+    "emits⚡": {
+        "prefix": "emits",
+        "body": ["interface EmitsType {", "    (e: 'update:modelValue', value: String): void", "}", "", "const emit = defineEmits<EmitsType>()"],
+        "description": "emits"
+    },
+
+    "modelValue⚡": {
+        "prefix": "modelValue",
+        "body": [
+            "import { computed } from 'vue'",
+            "",
+            "interface EmitsType {",
+            "    (e: 'update:modelValue', value: String): void",
+            "}",
+            "",
+            "const emit = defineEmits<EmitsType>()",
+            "",
+            "const props = defineProps({",
+            "    modelValue: {",
+            "        type: String,",
+            "        default: ''",
+            "    }",
+            "})",
+            "",
+            "const value = computed({",
+            "    get: () => props.modelValue,",
+            "    set: (val) => {",
+            "        emit('update:modelValue', val)",
+            "    }",
+            "})"
+        ],
+        "description": "modelValue"
+    }
+}
