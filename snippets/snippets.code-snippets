@@ -2,31 +2,31 @@
     /**
      * Basic 基础组件
      */
-    "el-button": {
+    "Button 按钮🌱": {
         "prefix": "el-button",
         "body": ["<el-button>${1:Default}</el-button>"],
         "description": "Button 按钮"
     },
 
-    "el-row": {
+    "Layout 行布局🌱": {
         "prefix": "el-row",
         "body": ["<el-row>$1</el-row>"],
         "description": "Layout 行布局"
     },
 
-    "el-col": {
+    "Layout 列布局🌱": {
         "prefix": "el-col",
         "body": ["<el-col>$1</el-col>"],
         "description": "Layout 列布局"
     },
 
-    "el-link": {
+    "Link 链接🌱": {
         "prefix": "el-link",
         "body": ["<el-link href=\"${2:https://element-plus.org}\" target=\"_blank\">${1:default}</el-link>"],
         "description": "Link 链接"
     },
 
-    "el-scrollbar": {
+    "Scrollbar 滚动条🌱": {
         "prefix": "el-scrollbar",
         "body": ["<el-scrollbar height=\"400px\">$1</el-scrollbar>"],
         "description": "Scrollbar 滚动条"
@@ -35,7 +35,7 @@
     /**
      * Form 表单组件
      */
-    "el-checkbox": {
+    "Checkbox 多选框🌱": {
         "prefix": "el-checkbox",
         "body": [
             "<el-checkbox-group v-model=\"${1:checkList}\">",
@@ -47,37 +47,37 @@
         "description": "Checkbox 多选框"
     },
 
-    "el-date-picker": {
+    "Date Picker 日期选择器🌱": {
         "prefix": "el-date-picker",
         "body": ["<el-date-picker v-model=\"${1:value}\" type=\"date\" placeholder=\"请选择日期\" />"],
         "description": "Date Picker 日期选择器"
     },
 
-    "el-date-picker--year": {
+    "Date Picker 年份选择器🌱": {
         "prefix": "el-date-picker--year",
         "body": ["<el-date-picker v-model=\"${1:value}\" type=\"year\" placeholder=\"请选择年份\" />"],
         "description": "Date Picker 日期选择器（年）"
     },
 
-    "el-date-picker--month": {
+    "Date Picker 月份选择器🌱": {
         "prefix": "el-date-picker--month",
         "body": ["<el-date-picker v-model=\"${1:value}\" type=\"month\" placeholder=\"请选择月份\" />"],
         "description": "Date Picker 日期选择器（月）"
     },
 
-    "el-date-picker--daterange": {
+    "Date Picker 日期范围选择器🌱": {
         "prefix": "el-date-picker--daterange",
         "body": ["<el-date-picker v-model=\"${1:value}\" type=\"daterange\" range-separator=\"至\" start-placeholder=\"开始日期\" end-placeholder=\"结束日期\" />"],
         "description": "Date Picker 日期选择器（范围）"
     },
 
-    "el-date-picker--datetime": {
+    "Date Picker 日期时间选择器🌱": {
         "prefix": "el-date-picker--datetime",
         "body": ["<el-date-picker v-model=\"${1:value}\" type=\"datetime\" placeholder=\"请选择日期时间\" />"],
         "description": "Date Picker 日期选择器（时间）"
     },
 
-    "el-form": {
+    "Form 表单🌱": {
         "prefix": "el-form",
         "body": [
             "<el-form ref=\"formRef\" :model=\"form\" label-width=\"auto\"> ",
@@ -89,25 +89,25 @@
         "description": "Form 表单"
     },
 
-    "el-input": {
+    "Input 输入框🌱": {
         "prefix": "el-input",
         "body": ["<el-input v-model=\"${1:input}\" placeholder=\"请输入\" />"],
         "description": "Input 输入框"
     },
 
-    "el-input--password": {
+    "Input 输入框（密码）🌱": {
         "prefix": "el-input--password",
         "body": ["<el-input v-model=\"${1:input}\" type=\"password\" placeholder=\"请输入\" show-password />"],
         "description": "Input 输入框（密码）"
     },
 
-    "el-input--textarea": {
+    "Input 输入框（文本域）🌱": {
         "prefix": "el-input--textarea",
         "body": ["<el-input v-model=\"${1:textarea1}\" :rows=\"5\" type=\"textarea\" placeholder=\"请输入\" />"],
         "description": "Input 输入框（文本域）"
     },
 
-    "el-radio": {
+    "Radio 单选框🌱": {
         "prefix": "el-radio",
         "body": [
             "<el-radio-group v-model=\"${1:radio}\">",
@@ -119,7 +119,7 @@
         "description": "Radio 单选框"
     },
 
-    "el-select": {
+    "Select 选择器🌱": {
         "prefix": "el-select",
         "body": [
             "<el-select v-model=\"value\" placeholder=\"请选择\">",
@@ -130,7 +130,7 @@
         "description": "Select 选择器"
     },
 
-    "el-select--multiple": {
+    "Select 选择器（多选）🌱": {
         "prefix": "el-select--multiple",
         "body": [
             "<el-select v-model=\"value\" multiple collapse-tags placeholder=\"请选择\">",
@@ -141,19 +141,19 @@
         "description": "Select 选择器（多选）"
     },
 
-    "el-switch": {
+    "Switch 开关🌱": {
         "prefix": "el-switch",
         "body": ["<el-switch v-model=\"${1:value}\" />"],
         "description": "Switch 开关"
     },
 
-    "el-time-picker": {
+    "Time Picker 时间选择器🌱": {
         "prefix": "el-time-picker",
         "body": ["<el-time-picker v-model=\"${1:value}\" placeholder=\"请选择时间\" />"],
         "description": "Time Picker 时间选择器"
     },
 
-    "el-time-select": {
+    "Time Select 时间选择器🌱": {
         "prefix": "el-time-select",
         "body": ["<el-time-select v-model=\"${1:value}\" start=\"08:30\" step=\"00:15\" end=\"18:30\" placeholder=\"请选择时间\" />"],
         "description": "Time Select 时间选择器"
@@ -162,13 +162,13 @@
     /**
      * Data 数据展示
      */
-    "el-calendar": {
+    "Calendar 日历🌱": {
         "prefix": "el-calendar",
         "body": ["<el-calendar v-model=\"${1:value}\" />"],
         "description": "Calendar 日历"
     },
 
-    "el-carousel": {
+    "Carousel 走马灯🌱": {
         "prefix": "el-carousel",
         "body": [
             "<el-carousel trigger=\"click\" height=\"150px\">",
@@ -180,13 +180,13 @@
         "description": "Carousel 走马灯"
     },
 
-    "el-image": {
+    "Image 图片🌱": {
         "prefix": "el-image",
         "body": ["<el-image :src=\"${1:url}\" :preview-src-list=\"[${1:url}]\" fit=\"cover\" />"],
         "description": "Image 图片"
     },
 
-    "el-pagination": {
+    "Pagination 分页🌱": {
         "prefix": "el-pagination",
         "body": [
             "<el-pagination",
@@ -203,7 +203,7 @@
         "description": "Pagination 分页"
     },
 
-    "el-table": {
+    "Table 表格🌱": {
         "prefix": "el-table",
         "body": [
             "<el-table :data=\"tableData\" :style=\"{ width: '100%' }\" >",
@@ -215,7 +215,7 @@
         "description": "Table 表格"
     },
 
-    "el-tag": {
+    "Tag 标签🌱": {
         "prefix": "el-tag",
         "body": [
             "<el-tag :style=\"{ marginRight: '6px' }\">Tag 1</el-tag>",
@@ -230,7 +230,7 @@
     /**
      * Navigation 导航
      */
-    "el-breadcrumb": {
+    "Breadcrumb 面包屑🌱": {
         "prefix": "el-breadcrumb",
         "body": [
             "<el-breadcrumb separator=\"/\">",
@@ -243,7 +243,7 @@
         "description": "Breadcrumb 面包屑"
     },
 
-    "el-tabs": {
+    "Tabs 标签页🌱": {
         "prefix": "el-tabs",
         "body": [
             "<el-tabs v-model=\"activeName\" class=\"demo-tabs\" @tab-click=\"handleClick\">",
@@ -259,7 +259,7 @@
     /**
      * Feedback 反馈组件
      */
-    "el-dialog": {
+    "Dialog 对话框🌱": {
         "prefix": "el-dialog",
         "body": [
             "<el-dialog v-model=\"${1:show}\" title=\"Shipping address\">",
@@ -275,7 +275,7 @@
         "description": "Dialog 对话框"
     },
 
-    "el-drawer": {
+    "Drawer 抽屉🌱": {
         "prefix": "el-drawer",
         "body": [
             "<el-drawer v-model=\"${1:show}\" title=\"I have a nested table inside!\" direction=\"rtl\" size=\"50%\">",
