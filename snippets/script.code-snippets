@@ -1,8 +1,14 @@
 {
-    "componentsImport⚡": {
-        "prefix": "componentsImport⚡",
+    "importApi⚡": {
+        "prefix": "importApi⚡",
+        "body": ["import $2 from '@/api/$1'"],
+        "description": "importApi⚡"
+    },
+
+    "importComponents⚡": {
+        "prefix": "importComponents⚡",
         "body": ["import $2 from '@/components/$1/index.vue'"],
-        "description": "componentsImport⚡"
+        "description": "importComponents⚡"
     },
 
     "props⚡": {
@@ -63,5 +69,17 @@
             "})"
         ],
         "description": "modelValue"
+    },
+
+    "forEach⚡": {
+        "prefix": "forEach",
+        "body": ["forEach((x: any) => {$1})"],
+        "description": "forEach"
+    },
+
+    "map⚡": {
+        "prefix": "map",
+        "body": ["map((x: any) => {$1})"],
+        "description": "map"
     }
 }
