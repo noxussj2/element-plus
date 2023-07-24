@@ -24,7 +24,7 @@
 
 在 `.vue` 文件中输入 `el-` 时就会出现一系列 `Element Plus` 组件的代码提示。
 
-<img src="https://raw.githubusercontent.com/noxussj2/element-plus/main/images/el2.png">
+<img src="./images/el2.png">
 
 <br />
 
