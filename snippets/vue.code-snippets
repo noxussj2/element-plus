@@ -1,7 +1,7 @@
 {
     "template⚡": {
         "prefix": "template",
-        "body": ["<template>", "    <div class=\"$1\"></div>", "</template>"],
+        "body": ["<template>$1</template>"],
         "description": "template"
     },
 

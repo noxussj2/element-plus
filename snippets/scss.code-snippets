@@ -3,5 +3,179 @@
         "prefix": "background",
         "body": ["background: url('@/assets/$1.png');"],
         "description": "background"
+    },
+
+    "Brand Color🌱": {
+        "prefix": "#409EFF",
+        "body": ["#409EFF"],
+        "description": "Brand Color"
+    },
+
+    "Success Color🌱": {
+        "prefix": "#67C23A",
+        "body": ["#67C23A"],
+        "description": "Success Color"
+    },
+
+    "Warning Color🌱": {
+        "prefix": "#E6A23C",
+        "body": ["#E6A23C"],
+        "description": "Warning Color"
+    },
+
+    "Danger Color🌱": {
+        "prefix": "#F56C6C",
+        "body": ["#F56C6C"],
+        "description": "Danger Color"
+    },
+
+    "Info Color🌱": {
+        "prefix": "#909399",
+        "body": ["#909399"],
+        "description": "Info Color"
+    },
+
+    "Primary Text Color🌱": {
+        "prefix": "#E5EAF3",
+        "body": ["#E5EAF3"],
+        "description": "Primary Text Color"
+    },
+
+    "Regular Text Color🌱": {
+        "prefix": "#CFD3DC",
+        "body": ["#CFD3DC"],
+        "description": "Regular Text Color"
+    },
+
+    "Secondary Text Color🌱": {
+        "prefix": "#A3A6AD",
+        "body": ["#A3A6AD"],
+        "description": "Secondary Text Color"
+    },
+
+    "Placeholder Text Color🌱": {
+        "prefix": "#8D9095",
+        "body": ["#8D9095"],
+        "description": "Placeholder Text Color"
+    },
+
+    "Disabled Text Color🌱": {
+        "prefix": "#6C6E72",
+        "body": ["#6C6E72"],
+        "description": "Disabled Text Color"
+    },
+
+    "Darker Border Color🌱": {
+        "prefix": "#636466",
+        "body": ["#636466"],
+        "description": "Darker Border Color"
+    },
+
+    "Dark Border Color🌱": {
+        "prefix": "#58585B",
+        "body": ["#58585B"],
+        "description": "Dark Border Color"
+    },
+
+    "Base Border Color🌱": {
+        "prefix": "#4C4D4F",
+        "body": ["#4C4D4F"],
+        "description": "Base Border Color"
+    },
+
+    "Light Border Color🌱": {
+        "prefix": "#414243",
+        "body": ["#414243"],
+        "description": "Light Border Color"
+    },
+
+    "Lighter Border Color🌱": {
+        "prefix": "#363637",
+        "body": ["#363637"],
+        "description": "Lighter Border Color"
+    },
+
+    "Extra-light Border Color🌱": {
+        "prefix": "#2B2B2C",
+        "body": ["#2B2B2C"],
+        "description": "Extra-light Border Color"
+    },
+
+    "Darker Fill Color🌱": {
+        "prefix": "#424243",
+        "body": ["#424243"],
+        "description": "Darker Fill Color"
+    },
+
+    "Dark Fill Color🌱": {
+        "prefix": "#39393A",
+        "body": ["#39393A"],
+        "description": "Dark Fill Color"
+    },
+
+    "Base Fill Color🌱": {
+        "prefix": "#303030",
+        "body": ["#303030"],
+        "description": "Base Fill Color"
+    },
+
+    "Light Fill Color🌱": {
+        "prefix": "#262727",
+        "body": ["#262727"],
+        "description": "Light Fill Color"
+    },
+
+    "Lighter Fill Color🌱": {
+        "prefix": "#1D1D1D",
+        "body": ["#1D1D1D"],
+        "description": "Lighter Fill Color"
+    },
+
+    "Extra-light Fill Color🌱": {
+        "prefix": "#191919",
+        "body": ["#191919"],
+        "description": "Extra-light Fill Color"
+    },
+
+    "Blank Fill Color🌱": {
+        "prefix": "TRANSPARENT",
+        "body": ["TRANSPARENT"],
+        "description": "Blank Fill Color"
+    },
+
+    "Basic Black Color🌱": {
+        "prefix": "#000000",
+        "body": ["#000000"],
+        "description": "Basic Black Color"
+    },
+
+    "Basic White Color🌱": {
+        "prefix": "#FFFFFF",
+        "body": ["#FFFFFF"],
+        "description": "Basic White Color"
+    },
+
+    "Transparent Color🌱": {
+        "prefix": "Transparent",
+        "body": ["Transparent"],
+        "description": "Transparent Color"
+    },
+
+    "Page Background🌱": {
+        "prefix": "#0A0A0A",
+        "body": ["#0A0A0A"],
+        "description": "Page Background"
+    },
+
+    "Base Background🌱": {
+        "prefix": "#141414",
+        "body": ["#141414"],
+        "description": "Base Background"
+    },
+
+    "Overlay Background🌱": {
+        "prefix": "#1D1E1F",
+        "body": ["#1D1E1F"],
+        "description": "Overlay Background"
     }
 }

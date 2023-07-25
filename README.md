@@ -24,7 +24,7 @@
 
 在 `.vue` 文件中输入 `el-` 时就会出现一系列 `Element Plus` 组件的代码提示。
 
-<img src="./images/el.png">
+<img src="https://raw.githubusercontent.com/noxussj2/element-plus/main/images/el.png">
 
 <br />
 
@@ -63,6 +63,28 @@
 | 22   |          `<el-tabs>`          | `Tabs 标签页`                    |
 | 23   |         `<el-dialog>`         | `Dialog 对话框`                  |
 | 24   |         `<el-drawer>`         | `Drawer 抽屉`                    |
+
+## 目前支持的色彩系列
+
+|        主/辅助色        | 基础系列                     |
+| :---------------------: | :--------------------------- |
+|  `#409EFF` Brand Color  | `#FFFFFF` Basic White        |
+| `#67C23A` Success Color | `Transparent`Transparent     |
+| `#E6A23C` Warning Color | `#0A0A0A` Page Background    |
+| `#F56C6C` Danger Color  | `#141414` Base Background    |
+|  `#909399` Info Color   | `#1D1E1F` Overlay Background |
+
+<br />
+
+|         Text 系列         | Border 系列                  | 填充系列                   |
+| :-----------------------: | :--------------------------- | :------------------------- |
+|  `#E5EAF3` Primary Text   | `#58585B` Dark Border        | `#424243` Darker Fill      |
+|  `#CFD3DC` Regular Text   | `#4C4D4F` Base Border        | `#39393A` Dark Fill        |
+| `#A3A6AD` Secondary Text  | `#414243` Light Border       | `#303030` Base Fill        |
+| `#8D9095`Placeholder Text | `#363637` Lighter Border     | `#262727` Light Fill       |
+|  `#6C6E72` Disabled Text  | `#2B2B2C` Extra-light Border | `#1D1D1D` Lighter Fill     |
+|             -             | -                            | `#191919` Extra-light Fill |
+|             -             | -                            | `TRANSPARENT` Blank Fill   |
 
 ## 详细代码片段
 
