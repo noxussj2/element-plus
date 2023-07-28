@@ -1,24 +1,27 @@
 {
-    "importApi⚡": {
+    /**
+     * Vue3.0 & ES6
+     */
+    "importApi": {
         "prefix": "importApi⚡",
-        "body": ["import $2 from '@/api/$1'"],
-        "description": "importApi⚡"
+        "body": ["import { ${2:IGetList} } from '@/api/${1:home}'"],
+        "description": "importApi"
     },
 
-    "importComponents⚡": {
+    "importComponents": {
         "prefix": "importComponents⚡",
-        "body": ["import $2 from '@/components/$1/index.vue'"],
-        "description": "importComponents⚡"
+        "body": ["import ${2:MyComponents} from '@/components/${1:MyComponents}/index.vue'"],
+        "description": "importComponents"
     },
 
-    "props⚡": {
-        "prefix": "props",
+    "props": {
+        "prefix": "props⚡",
         "body": ["import { PropType } from 'vue'", "", "const props = defineProps({", "    data: {", "        type: String,", "        default: ''", "    }", "})"],
         "description": "props"
     },
 
-    "propsType⚡": {
-        "prefix": "propsType",
+    "propsType": {
+        "prefix": "propsType⚡",
         "body": [
             "import { PropType } from 'vue'",
             "",
@@ -37,14 +40,14 @@
         "description": "propsType"
     },
 
-    "emits⚡": {
-        "prefix": "emits",
+    "emits": {
+        "prefix": "emits⚡",
         "body": ["interface EmitsType {", "    (e: 'update:modelValue', value: String): void", "}", "", "const emit = defineEmits<EmitsType>()"],
         "description": "emits"
     },
 
-    "modelValue⚡": {
-        "prefix": "modelValue",
+    "modelValue": {
+        "prefix": "modelValue⚡",
         "body": [
             "import { computed } from 'vue'",
             "",
@@ -71,15 +74,29 @@
         "description": "modelValue"
     },
 
-    "forEach⚡": {
-        "prefix": "forEach",
+    "forEach": {
+        "prefix": "forEach⚡",
         "body": ["forEach((x: any) => {$1})"],
         "description": "forEach"
     },
 
-    "map⚡": {
-        "prefix": "map",
+    "map": {
+        "prefix": "map⚡",
         "body": ["map((x: any) => {$1})"],
         "description": "map"
+    },
+
+    /**
+     * Rules 表单规则
+     */
+    "Rules 表单规则": {
+        "prefix": "rules🌱",
+        "body": [
+            "const rules = reactive({",
+            "    field1: [{ required: true, message: '请输入', trigger: 'blur' }],",
+            "    field2: [{ required: true, message: '请选择', trigger: 'change' }]",
+            "})"
+        ],
+        "description": "Rules 表单规则"
     }
 }

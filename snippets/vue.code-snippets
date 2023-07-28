@@ -1,24 +1,27 @@
 {
-    "template⚡": {
-        "prefix": "template",
+    /**
+     * Vue3.0
+     */
+    "template": {
+        "prefix": "template⚡",
         "body": ["<template>$1</template>"],
         "description": "template"
     },
 
-    "script-ts-setup⚡": {
-        "prefix": "script-ts-setup",
+    "script-ts-setup": {
+        "prefix": "script-ts-setup⚡",
         "body": ["<script lang=\"ts\" setup>", "$1", "</script>"],
         "description": "script-ts-setup"
     },
 
-    "scss⚡": {
-        "prefix": "scss",
+    "scss": {
+        "prefix": "scss⚡",
         "body": ["<style lang=\"scss\" scoped>", "$1", "</style>"],
         "description": "scss"
     },
 
-    "scss-import⚡": {
-        "prefix": "scss-import",
+    "scss-import": {
+        "prefix": "scss-import⚡",
         "body": ["<style lang=\"scss\" scoped>", "@import './index.scss';", "</style>"],
         "description": "scss import"
     }

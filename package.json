@@ -4,7 +4,7 @@
     "icon": "images/element-plus.png",
     "displayName": "Element Plus",
     "description": "Element Plus Snippets",
-    "version": "0.0.18",
+    "version": "0.0.20",
     "engines": {
         "vscode": "^1.46.0"
     },
@@ -14,28 +14,24 @@
     "contributes": {
         "snippets": [
             {
-                "language": "vue",
-                "path": "./snippets/element-plus.code-snippets"
-            },
-            {
-                "language": "html",
-                "path": "./snippets/element-plus.code-snippets"
-            },
-            {
-                "language": "vue",
-                "path": "./snippets/vue.code-snippets"
-            },
-            {
-                "language": "html",
-                "path": "./snippets/template.code-snippets"
-            },
-            {
                 "language": "typescript",
                 "path": "./snippets/script.code-snippets"
             },
             {
                 "language": "scss",
                 "path": "./snippets/scss.code-snippets"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/template.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/template.code-snippets"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/vue.code-snippets"
             }
         ]
     },

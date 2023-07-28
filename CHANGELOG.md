@@ -4,6 +4,14 @@ All notable changes to the "element-plus-code-snippets" extension will be docume
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## v0.0.20
+
+-   更新 `README.md` 内容
+
+## v0.0.19
+
+-   添加表单校验规则提示
+
 ## v0.0.18
 
 -   增加色彩系列代码提示

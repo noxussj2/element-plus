@@ -10,15 +10,15 @@
 
 # Element Plus Snippets
 
-基于 `Element Plus` 实现的一款代码提示插件
+-   主要提供 `Element Plus 🌱` 组件库语法支持
 
-语法采用 `4` 个空格缩进的形式
+-   额外提供 `Vue3 ⚡` `ES6 ⚡` 常用语法支持
 
-## 特性
+-   兼容：`.vue` `.ts` `.scss`
 
--   开箱即用：安装插件后，即可直接在代码中使用
+-   驱动更新：当下载量达到 `260` 时，才会进行大版本更新
 
--   组件支持：提供了大部分常用组件的语法提示
+<br />
 
 ## 开始第一个语法提示
 
@@ -28,234 +28,81 @@
 
 <br />
 
-## 目前支持的组件提示
+## `.ts` 支持
 
-| 序号 |           触发建议            | 说明                             |
-| :--- | :---------------------------: | :------------------------------- |
-| 1    |         `<el-button>`         | `Button 按钮`                    |
-| 2    |          `<el-row>`           | `Layout 行布局`                  |
-| 3    |          `<el-col>`           | `Layout 列布局`                  |
-| 4    |          `<el-link>`          | `Link 链接`                      |
-| 5    |       `<el-scrollbar>`        | `Scrollbar 滚动条`               |
-| 6    |        `<el-checkbox>`        | `Checkbox 多选框`                |
-| 7    |      `<el-date-picker>`       | `Date Picker 日期选择器`         |
-| 7    |   `<el-date-picker--year>`    | `Date Picker 日期选择器（年份）` |
-| 7    |   `<el-date-picker--month>`   | `Date Picker 日期选择器（月份）` |
-| 7    | `<el-date-picker--daterange>` | `Date Picker 日期选择器（范围）` |
-| 7    | `<el-date-picker--datetime>`  | `Date Picker 日期选择器（时间）` |
-| 8    |          `<el-form>`          | `Form 表单`                      |
-| 9    |         `<el-input>`          | `Input 输入框`                   |
-| 9    |    `<el-input--password>`     | `Input 输入框（密码）`           |
-| 9    |    `<el-input--textarea>`     | `Input 输入框（文本域）`         |
-| 10   |         `<el-radio>`          | `Radio 单选框`                   |
-| 11   |         `<el-select>`         | `Select 选择器`                  |
-| 11   |    `<el-select--multiple>`    | `Select 选择器（多选）`          |
-| 12   |         `<el-switch>`         | `Switch 开关`                    |
-| 13   |      `<el-time-picker>`       | `Time Picker 时间选择器`         |
-| 14   |      `<el-time-select>`       | `Time Select 时间选择器`         |
-| 15   |        `<el-calendar>`        | `Calendar 日历`                  |
-| 16   |        `<el-carousel>`        | `Carousel 走马灯`                |
-| 17   |         `<el-image>`          | `Image 图片`                     |
-| 18   |       `<el-pagination>`       | `Pagination 分页`                |
-| 19   |         `<el-table>`          | `Table 表格`                     |
-| 20   |          `<el-tag>`           | `Tag 标签`                       |
-| 21   |       `<el-breadcrumb>`       | `Breadcrumb 面包屑`              |
-| 22   |          `<el-tabs>`          | `Tabs 标签页`                    |
-| 23   |         `<el-dialog>`         | `Dialog 对话框`                  |
-| 24   |         `<el-drawer>`         | `Drawer 抽屉`                    |
-
-## 目前支持的色彩系列
-
-|        主/辅助色        | 基础系列                     |
-| :---------------------: | :--------------------------- |
-|  `#409EFF` Brand Color  | `#FFFFFF` Basic White        |
-| `#67C23A` Success Color | `Transparent`Transparent     |
-| `#E6A23C` Warning Color | `#0A0A0A` Page Background    |
-| `#F56C6C` Danger Color  | `#141414` Base Background    |
-|  `#909399` Info Color   | `#1D1E1F` Overlay Background |
+| 序号 |      触发建议      | 说明                                                       | 类型 |
+| :--- | :----------------: | :--------------------------------------------------------- | :--- |
+| 1    |    `importApi`     | `import { ? } from '@/api/?'`                              | ⚡   |
+| 2    | `importComponents` | `import ? from '@/components/?/index.vue'`                 | ⚡   |
+| 3    |      `props`       | `defineProps({})`                                          | ⚡   |
+| 4    |    `propsType`     | `PropType<any[]>`                                          | ⚡   |
+| 5    |      `emits`       | `defineEmits<EmitsType>`                                   | ⚡   |
+| 6    |    `modelValue`    | `update:modelValue`                                        | ⚡   |
+| 7    |     `forEach`      | `.forEach((x: any) => {})`                                 | ⚡   |
+| 8    |       `map`        | `.map((x: any) => {})`                                     | ⚡   |
+| 9    |      `rules`       | `[{ required: true, message: '请输入', trigger: 'blur' }]` | 🌱   |
 
 <br />
 
-|         Text 系列         | Border 系列                  | 填充系列                   |
-| :-----------------------: | :--------------------------- | :------------------------- |
-|  `#E5EAF3` Primary Text   | `#58585B` Dark Border        | `#424243` Darker Fill      |
-|  `#CFD3DC` Regular Text   | `#4C4D4F` Base Border        | `#39393A` Dark Fill        |
-| `#A3A6AD` Secondary Text  | `#414243` Light Border       | `#303030` Base Fill        |
-| `#8D9095`Placeholder Text | `#363637` Lighter Border     | `#262727` Light Fill       |
-|  `#6C6E72` Disabled Text  | `#2B2B2C` Extra-light Border | `#1D1D1D` Lighter Fill     |
-|             -             | -                            | `#191919` Extra-light Fill |
-|             -             | -                            | `TRANSPARENT` Blank Fill   |
+## `.scss` 支持
 
-## 详细代码片段
+| 序号 |   触发建议   | 说明                                | 类型 |
+| :--- | :----------: | :---------------------------------- | :--- |
+| 1    | `background` | `background: url('@/assets/.png');` | ⚡   |
+| 2    |  `#409EFF`   | `Brand Color`                       | 🌱   |
+| 3    |  `#67C23A`   | `Success Color`                     | 🌱   |
+| 4    |  `#E6A23C`   | `Warning Color`                     | 🌱   |
+| 5    |  `#F56C6C`   | `Danger Color`                      | 🌱   |
+| 6    |  `#909399`   | `Info Color`                        | 🌱   |
+| 7    |    `...`     | `...`                               | 🌱   |
 
-### Basic 基础组件
+<br />
 
-```html
-<!-- el-button -->
-<el-button>Default</el-button>
+## `.html` & `<template>` 支持
 
-<!-- el-row -->
-<el-row></el-row>
+| 序号 |          触发建议           | 说明                                     | 类型 |
+| :--- | :-------------------------: | :--------------------------------------- | :--- |
+| 1    |           `v-for`           | `v-for="(item, index) in " :key="index"` | ⚡   |
+| 2    |            `img`            | `<img alt="" src="@/assets/.png" />`     | ⚡   |
+| 3    |         `el-button`         | `<el-button>`                            | 🌱   |
+| 4    |          `el-row`           | `<el-row>`                               | 🌱   |
+| 5    |          `el-col`           | `<el-col>`                               | 🌱   |
+| 6    |          `el-link`          | `<el-link>`                              | 🌱   |
+| 7    |       `el-scrollbar`        | `<el-scrollbar>`                         | 🌱   |
+| 8    |        `el-checkbox`        | `<el-checkbox>`                          | 🌱   |
+| 9    |      `el-date-picker`       | `<el-date-picker type="date">`           | 🌱   |
+| 10   |   `el-date-picker--year`    | `<el-date-picker type="year">`           | 🌱   |
+| 11   |   `el-date-picker--month`   | `<el-date-picker type="month">`          | 🌱   |
+| 12   | `el-date-picker--daterange` | `<el-date-picker type="daterange">`      | 🌱   |
+| 13   | `el-date-picker--datetime`  | `<el-date-picker type="ddatetimeate">`   | 🌱   |
+| 14   |          `el-form`          | `<el-form>`                              | 🌱   |
+| 15   |         `el-input`          | `<el-input>`                             | 🌱   |
+| 16   |    `el-input--password`     | `<el-input type="password">`             | 🌱   |
+| 17   |    `el-input--textarea`     | `<el-input type="textarea">`             | 🌱   |
+| 18   |         `el-radio`          | `<el-radio>`                             | 🌱   |
+| 19   |         `el-select`         | `<el-select>`                            | 🌱   |
+| 20   |    `el-select--multiple`    | `<el-select multiple>`                   | 🌱   |
+| 21   |         `el-switch`         | `<el-switch>`                            | 🌱   |
+| 22   |      `el-time-picker`       | `<el-time-picker>`                       | 🌱   |
+| 23   |      `el-time-select`       | `<el-time-select>`                       | 🌱   |
+| 24   |        `el-calendar`        | `<el-calendar>`                          | 🌱   |
+| 25   |        `el-carousel`        | `<el-carousel>`                          | 🌱   |
+| 26   |         `el-image`          | `<el-image>`                             | 🌱   |
+| 27   |       `el-pagination`       | `<el-pagination>`                        | 🌱   |
+| 28   |         `el-table`          | `<el-table>`                             | 🌱   |
+| 29   |          `el-tag`           | `<el-tag>`                               | 🌱   |
+| 30   |       `el-breadcrumb`       | `<el-breadcrumb>`                        | 🌱   |
+| 31   |          `el-tabs`          | `<el-tabs>`                              | 🌱   |
+| 32   |         `el-dialog`         | `<el-dialog>`                            | 🌱   |
+| 33   |         `el-drawer`         | `<el-drawer>`                            | 🌱   |
 
-<!-- el-col -->
-<el-col></el-col>
+<br />
 
-<!-- el-link -->
-<el-link href="https://element-plus.org" target="_blank">default</el-link>
+## `.vue` 支持
 
-<!-- el-scrollbar -->
-<el-scrollbar height="400px"></el-scrollbar>
-```
-
-### Form 表单组件
-
-```html
-<!-- el-checkbox -->
-<el-checkbox-group v-model="checkList">
-    <el-checkbox label="Option 1" />
-    <el-checkbox label="Option 2" />
-    <el-checkbox label="Option 3" />
-</el-checkbox-group>
-
-<!-- el-date-picker -->
-<el-date-picker v-model="value" type="date" placeholder="请选择日期" />
-
-<!-- el-date-picker--year -->
-<el-date-picker v-model="value" type="year" placeholder="请选择年份" />
-
-<!-- el-date-picker--month -->
-<el-date-picker v-model="value" type="month" placeholder="请选择月份" />
-
-<!-- el-date-picker--daterange -->
-<el-date-picker v-model="value" type="daterange" range-separator="至" start-placeholder="开始日期" end-placeholder="结束日期" />
-
-<!-- el-date-picker--datetime -->
-<el-date-picker v-model="value" type="datetime" placeholder="请选择日期时间" />
-
-<!-- el-form -->
-<el-form ref="formRef" :model="form" label-width="auto">
-    <el-form-item label="Activity name" prop="name">A</el-form-item>
-    <el-form-item label="Activity zone" prop="zone">B</el-form-item>
-    <el-form-item label="Activity time" prop="time">C</el-form-item>
-</el-form>
-
-<!-- el-input -->
-<el-input v-model="input" placeholder="请输入" />
-
-<!-- el-input--password -->
-<el-input v-model="input" type="password" placeholder="请输入" show-password />
-
-<!-- el-input--textarea -->
-<el-input v-model="textarea1" :rows="5" type="textarea" placeholder="请输入" />
-
-<!-- el-radio -->
-<el-radio-group v-model="radio">
-    <el-radio label="A">Option A</el-radio>
-    <el-radio label="B">Option B</el-radio>
-    <el-radio label="C">Option C</el-radio>
-</el-radio-group>
-
-<!-- el-select -->
-<el-select v-model="value" placeholder="请选择">
-    <el-option label="Options1" value="1" />
-    <el-option label="Options2" value="2" />
-</el-select>
-
-<!-- el-select--multiple -->
-<el-select v-model="value" multiple collapse-tags placeholder="请选择">
-    <el-option label="Options1" value="1" />
-    <el-option label="Options2" value="2" />
-</el-select>
-
-<!-- el-switch -->
-<el-switch v-model="value" />
-
-<!-- el-time-picker -->
-<el-time-picker v-model="value" placeholder="请选择时间" />
-
-<!-- el-time-select -->
-<el-time-select v-model="value" start="08:30" step="00:15" end="18:30" placeholder="请选择时间" />
-```
-
-### Data 数据展示
-
-```html
-<!-- el-calendar -->
-<el-calendar v-model="value" />
-
-<!-- el-carousel -->
-<el-carousel trigger="click" height="150px">
-    <el-carousel-item> container1 </el-carousel-item>
-    <el-carousel-item> container2 </el-carousel-item>
-    <el-carousel-item> container3 </el-carousel-item>
-</el-carousel>
-
-<!-- el-image -->
-<el-image :src="url" :preview-src-list="[url]" fit="cover" />
-
-<!-- el-pagination -->
-<el-pagination
-    v-model:current-page="currentPage"
-    v-model:page-size="pageSize"
-    :page-sizes="[100, 200, 300, 400]"
-    background
-    layout="total, sizes, prev, pager, next, jumper"
-    :total="400"
-    @size-change="handleSizeChange"
-    @current-change="handleCurrentChange"
-/>
-
-<!-- el-table -->
-<el-table :data="tableData" :style="{ width: '100%' }">
-    <el-table-column prop="date" label="Date" width="180" />
-    <el-table-column prop="name" label="Name" width="180" />
-    <el-table-column prop="address" label="Address" />
-</el-table>
-
-<!-- el-tag -->
-<el-tag :style="{ marginRight: '6px' }">Tag 1</el-tag>
-<el-tag :style="{ marginRight: '6px' }" type="success">Tag 2</el-tag>
-<el-tag :style="{ marginRight: '6px' }" type="info">Tag 3</el-tag>
-<el-tag :style="{ marginRight: '6px' }" type="warning">Tag 4</el-tag>
-<el-tag :style="{ marginRight: '6px' }" type="danger">Tag 5</el-tag>
-```
-
-### Navigation 导航
-
-```html
-<!-- el-breadcrumb -->
-<el-breadcrumb separator="/">
-    <el-breadcrumb-item :to="{ path: '/' }">homepage</el-breadcrumb-item>
-    <el-breadcrumb-item><a href="/">promotion management</a></el-breadcrumb-item>
-    <el-breadcrumb-item>promotion list</el-breadcrumb-item>
-    <el-breadcrumb-item>promotion detail</el-breadcrumb-item>
-</el-breadcrumb>
-
-<!-- el-tabs -->
-<el-tabs v-model="activeName" class="demo-tabs" @tab-click="handleClick">
-    <el-tab-pane label="User" name="first">User</el-tab-pane>
-    <el-tab-pane label="Config" name="second">Config</el-tab-pane>
-    <el-tab-pane label="Role" name="third">Role</el-tab-pane>
-    <el-tab-pane label="Task" name="fourth">Task</el-tab-pane>
-</el-tabs>
-```
-
-### Feedback 反馈组件
-
-```html
-<!-- el-dialog -->
-<el-dialog v-model="show" title="Shipping address">
-    <main>container</main>
-    <template #footer>
-        <span class="dialog-footer">
-            <el-button @click="show = false">Cancel</el-button>
-            <el-button type="primary" @click="show = false"> Confirm </el-button>
-        </span>
-    </template>
-</el-dialog>
-
-<!-- el-drawer -->
-<el-drawer v-model="show" title="I have a nested table inside!" direction="rtl" size="50%">
-    <main>container</main>
-</el-drawer>
-```
+| 序号 |     触发建议      | 说明                         | 类型 |
+| :--- | :---------------: | :--------------------------- | :--- |
+| 1    |    `template`     | `<template>`                 | ⚡   |
+| 2    | `script-ts-setup` | `<script lang="ts" setup>`   | ⚡   |
+| 3    |      `scss`       | `<style lang="scss" scoped>` | ⚡   |
+| 4    |   `scss-import`   | `@import './index.scss';`    | ⚡   |
