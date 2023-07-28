@@ -23,6 +23,6 @@
     "scss-import": {
         "prefix": "scss-import⚡",
         "body": ["<style lang=\"scss\" scoped>", "@import './index.scss';", "</style>"],
-        "description": "scss import"
+        "description": "scss-import"
     }
 }

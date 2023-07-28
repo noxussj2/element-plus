@@ -71,25 +71,25 @@
     "Date Picker 年份选择器": {
         "prefix": "el-date-picker--year🌱",
         "body": ["<el-date-picker v-model=\"${1:value}\" type=\"year\" placeholder=\"请选择年份\" />"],
-        "description": "Date Picker 日期选择器（年）"
+        "description": "Date Picker 年份选择器"
     },
 
     "Date Picker 月份选择器": {
         "prefix": "el-date-picker--month🌱",
         "body": ["<el-date-picker v-model=\"${1:value}\" type=\"month\" placeholder=\"请选择月份\" />"],
-        "description": "Date Picker 日期选择器（月）"
+        "description": "Date Picker 月份选择器"
     },
 
     "Date Picker 日期范围选择器": {
         "prefix": "el-date-picker--daterange🌱",
         "body": ["<el-date-picker v-model=\"${1:value}\" type=\"daterange\" range-separator=\"至\" start-placeholder=\"开始日期\" end-placeholder=\"结束日期\" />"],
-        "description": "Date Picker 日期选择器（范围）"
+        "description": "Date Picker 日期范围选择器"
     },
 
     "Date Picker 日期时间选择器": {
         "prefix": "el-date-picker--datetime🌱",
         "body": ["<el-date-picker v-model=\"${1:value}\" type=\"datetime\" placeholder=\"请选择日期时间\" />"],
-        "description": "Date Picker 日期选择器（时间）"
+        "description": "Date Picker 日期时间选择器"
     },
 
     "Form 表单": {
