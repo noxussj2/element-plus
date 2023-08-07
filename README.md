@@ -71,32 +71,33 @@
 | 5    |          `el-col`           | `<el-col>`                               | 🌱   |
 | 6    |          `el-link`          | `<el-link>`                              | 🌱   |
 | 7    |       `el-scrollbar`        | `<el-scrollbar>`                         | 🌱   |
-| 8    |        `el-checkbox`        | `<el-checkbox>`                          | 🌱   |
-| 9    |      `el-date-picker`       | `<el-date-picker type="date">`           | 🌱   |
-| 10   |   `el-date-picker--year`    | `<el-date-picker type="year">`           | 🌱   |
-| 11   |   `el-date-picker--month`   | `<el-date-picker type="month">`          | 🌱   |
-| 12   | `el-date-picker--daterange` | `<el-date-picker type="daterange">`      | 🌱   |
-| 13   | `el-date-picker--datetime`  | `<el-date-picker type="ddatetimeate">`   | 🌱   |
-| 14   |          `el-form`          | `<el-form>`                              | 🌱   |
-| 15   |         `el-input`          | `<el-input>`                             | 🌱   |
-| 16   |    `el-input--password`     | `<el-input type="password">`             | 🌱   |
-| 17   |    `el-input--textarea`     | `<el-input type="textarea">`             | 🌱   |
-| 18   |         `el-radio`          | `<el-radio>`                             | 🌱   |
-| 19   |         `el-select`         | `<el-select>`                            | 🌱   |
-| 20   |    `el-select--multiple`    | `<el-select multiple>`                   | 🌱   |
-| 21   |         `el-switch`         | `<el-switch>`                            | 🌱   |
-| 22   |      `el-time-picker`       | `<el-time-picker>`                       | 🌱   |
-| 23   |      `el-time-select`       | `<el-time-select>`                       | 🌱   |
-| 24   |        `el-calendar`        | `<el-calendar>`                          | 🌱   |
-| 25   |        `el-carousel`        | `<el-carousel>`                          | 🌱   |
-| 26   |         `el-image`          | `<el-image>`                             | 🌱   |
-| 27   |       `el-pagination`       | `<el-pagination>`                        | 🌱   |
-| 28   |         `el-table`          | `<el-table>`                             | 🌱   |
-| 29   |          `el-tag`           | `<el-tag>`                               | 🌱   |
-| 30   |       `el-breadcrumb`       | `<el-breadcrumb>`                        | 🌱   |
-| 31   |          `el-tabs`          | `<el-tabs>`                              | 🌱   |
-| 32   |         `el-dialog`         | `<el-dialog>`                            | 🌱   |
-| 33   |         `el-drawer`         | `<el-drawer>`                            | 🌱   |
+| 8    |         `el-space`          | `<el-space>`                             | 🌱   |
+| 9    |        `el-checkbox`        | `<el-checkbox>`                          | 🌱   |
+| 10   |      `el-date-picker`       | `<el-date-picker type="date">`           | 🌱   |
+| 11   |   `el-date-picker--year`    | `<el-date-picker type="year">`           | 🌱   |
+| 12   |   `el-date-picker--month`   | `<el-date-picker type="month">`          | 🌱   |
+| 13   | `el-date-picker--daterange` | `<el-date-picker type="daterange">`      | 🌱   |
+| 14   | `el-date-picker--datetime`  | `<el-date-picker type="ddatetimeate">`   | 🌱   |
+| 15   |          `el-form`          | `<el-form>`                              | 🌱   |
+| 16   |         `el-input`          | `<el-input>`                             | 🌱   |
+| 17   |    `el-input--password`     | `<el-input type="password">`             | 🌱   |
+| 18   |    `el-input--textarea`     | `<el-input type="textarea">`             | 🌱   |
+| 19   |         `el-radio`          | `<el-radio>`                             | 🌱   |
+| 20   |         `el-select`         | `<el-select>`                            | 🌱   |
+| 21   |    `el-select--multiple`    | `<el-select multiple>`                   | 🌱   |
+| 22   |         `el-switch`         | `<el-switch>`                            | 🌱   |
+| 23   |      `el-time-picker`       | `<el-time-picker>`                       | 🌱   |
+| 24   |      `el-time-select`       | `<el-time-select>`                       | 🌱   |
+| 25   |        `el-calendar`        | `<el-calendar>`                          | 🌱   |
+| 26   |        `el-carousel`        | `<el-carousel>`                          | 🌱   |
+| 27   |         `el-image`          | `<el-image>`                             | 🌱   |
+| 28   |       `el-pagination`       | `<el-pagination>`                        | 🌱   |
+| 29   |         `el-table`          | `<el-table>`                             | 🌱   |
+| 30   |          `el-tag`           | `<el-tag>`                               | 🌱   |
+| 31   |       `el-breadcrumb`       | `<el-breadcrumb>`                        | 🌱   |
+| 32   |          `el-tabs`          | `<el-tabs>`                              | 🌱   |
+| 33   |         `el-dialog`         | `<el-dialog>`                            | 🌱   |
+| 34   |         `el-drawer`         | `<el-drawer>`                            | 🌱   |
 
 <br />
 

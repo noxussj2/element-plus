@@ -47,6 +47,12 @@
         "description": "Scrollbar 滚动条"
     },
 
+    "Space 间距": {
+        "prefix": "el-space🌱",
+        "body": ["<el-space :size=\"20\" spacer=\"|\">$1</el-space>"],
+        "description": "Space 间距"
+    },
+    
     /**
      * Form 表单组件
      */

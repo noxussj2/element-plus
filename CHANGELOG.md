@@ -8,6 +8,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 -   更新 `ts` -> `find` `then` 语法提示
 
+-   更新 `Element Plus` 语法提示，`<el-space>`
+
 ## v0.0.20
 
 -   更新 `README.md` 内容
