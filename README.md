@@ -16,7 +16,7 @@
 
 -   兼容：`.vue` `.ts` `.scss`
 
--   驱动更新：当下载量达到 `260` 时，才会进行大版本更新
+-   驱动更新：下一次更新条件，当下载量达到 `520` 时
 
 <br />
 
@@ -40,6 +40,8 @@
 | 6    |    `modelValue`    | `update:modelValue`                                        | ⚡   |
 | 7    |     `forEach`      | `.forEach((x: any) => {})`                                 | ⚡   |
 | 8    |       `map`        | `.map((x: any) => {})`                                     | ⚡   |
+| 8    |       `find`       | `.find((x: any) => x.value === ?)`                         | ⚡   |
+| 8    |       `then`       | `.then((res: any) => {})`                                  | ⚡   |
 | 9    |      `rules`       | `[{ required: true, message: '请输入', trigger: 'blur' }]` | 🌱   |
 
 <br />

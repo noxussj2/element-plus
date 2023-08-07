@@ -4,6 +4,10 @@ All notable changes to the "element-plus-code-snippets" extension will be docume
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## v0.0.22
+
+-   更新 `ts` -> `find` `then` 语法提示
+
 ## v0.0.20
 
 -   更新 `README.md` 内容
