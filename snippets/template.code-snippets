@@ -139,29 +139,6 @@
         "description": "Date Picker 日期选择器"
     },
 
-    "Date Picker 年份选择器": {
-        "prefix": "<el-date-picker--year⚡",
-        "body": ["<el-date-picker v-model=\"${1:value}\" type=\"year\" placeholder=\"请选择年份\" />"],
-        "description": "Date Picker 年份选择器"
-    },
-
-    "Date Picker 月份选择器": {
-        "prefix": "<el-date-picker--month⚡",
-        "body": ["<el-date-picker v-model=\"${1:value}\" type=\"month\" placeholder=\"请选择月份\" />"],
-        "description": "Date Picker 月份选择器"
-    },
-
-    "Date Picker 日期范围选择器": {
-        "prefix": "<el-date-picker--daterange⚡",
-        "body": ["<el-date-picker v-model=\"${1:value}\" type=\"daterange\" range-separator=\"至\" start-placeholder=\"开始日期\" end-placeholder=\"结束日期\" />"],
-        "description": "Date Picker 日期范围选择器"
-    },
-
-    "Date Picker 日期时间选择器": {
-        "prefix": "<el-date-picker--datetime⚡",
-        "body": ["<el-date-picker v-model=\"${1:value}\" type=\"datetime\" placeholder=\"请选择日期时间\" />"],
-        "description": "Date Picker 日期时间选择器"
-    },
 
     "Form 表单": {
         "prefix": "<el-form⚡",
@@ -189,30 +166,39 @@
         "description": "Input 输入框"
     },
 
-    "Input 输入框（密码）": {
-        "prefix": "<el-input--password⚡",
-        "body": ["<el-input v-model=\"${1:input}\" type=\"password\" placeholder=\"请输入\" show-password />"],
-        "description": "Input 输入框（密码）"
+    "Input Number 数字输入框": {
+        "prefix": "<el-input-number⚡",
+        "body": ["<el-input-number v-model=\"value\" :min=\"1\" :max=\"10\" @change=\"handleChange\" />"],
+        "description": "Input Number 数字输入框"
     },
 
-    "Input 输入框（文本域）": {
-        "prefix": "<el-input--textarea⚡",
-        "body": ["<el-input v-model=\"${1:textarea1}\" :rows=\"5\" type=\"textarea\" placeholder=\"请输入\" />"],
-        "description": "Input 输入框（文本域）"
+    
+    "Mention 提及": {
+        "prefix": "<el-mention⚡",
+        "body": ["<el-mention v-model=\"value\" :options=\"options\" placeholder=\"Please input\" />"],
+        "description": "Mention 提及"
     },
+
 
     "Radio 单选框": {
         "prefix": "<el-radio⚡",
         "body": [
-            "<el-radio-group v-model=\"${1:radio}\">",
-            "    <el-radio label=\"A\">Option A</el-radio>",
-            "    <el-radio label=\"B\">Option B</el-radio>",
-            "    <el-radio label=\"C\">Option C</el-radio>",
+            "<el-radio-group v-model=\"radio1\">",
+            "    <el-radio value=\"1\" size=\"large\">Option 1</el-radio>",
+            "    <el-radio value=\"2\" size=\"large\">Option 2</el-radio>",
             "</el-radio-group>"
         ],
         "description": "Radio 单选框"
     },
 
+    "Rate 评分": {
+        "prefix": "<el-rate⚡",
+        "body": [
+            "<el-rate v-model=\"value\" />",
+        ],
+        "description": "Rate 评分"
+    },
+    
     "Select 选择器": {
         "prefix": "<el-select⚡",
         "body": [
@@ -224,16 +210,6 @@
         "description": "Select 选择器"
     },
 
-    "Select 选择器（多选）": {
-        "prefix": "<el-select--multiple⚡",
-        "body": [
-            "<el-select v-model=\"value\" multiple collapse-tags placeholder=\"请选择\">",
-            "    <el-option label=\"Options1\" value=\"1\" />",
-            "    <el-option label=\"Options2\" value=\"2\" />",
-            "</el-select>"
-        ],
-        "description": "Select 选择器（多选）"
-    },
 
     "Switch 开关": {
         "prefix": "<el-switch⚡",

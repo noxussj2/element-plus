@@ -39,6 +39,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.activate = activate;
 exports.deactivate = deactivate;
 const vscode = __importStar(require("vscode"));
+const template_1 = require("./utils/template");
+const el_row_1 = __importDefault(require("./components/el-row"));
+const el_col_1 = __importDefault(require("./components/el-col"));
 const el_button_group_1 = __importDefault(require("./components/el-button-group"));
 const el_button_1 = __importDefault(require("./components/el-button"));
 const el_container_1 = __importDefault(require("./components/el-container"));
@@ -60,9 +63,15 @@ const el_date_picker_1 = __importDefault(require("./components/el-date-picker"))
 const el_form_item_1 = __importDefault(require("./components/el-form-item"));
 const el_form_1 = __importDefault(require("./components/el-form"));
 const el_input_1 = __importDefault(require("./components/el-input"));
-const el_row_1 = __importDefault(require("./components/el-row"));
-const el_col_1 = __importDefault(require("./components/el-col"));
-const template_1 = require("./utils/template");
+const el_input_number_1 = __importDefault(require("./components/el-input-number"));
+const el_mention_1 = __importDefault(require("./components/el-mention"));
+const el_radio_group_1 = __importDefault(require("./components/el-radio-group"));
+const el_radio_button_1 = __importDefault(require("./components/el-radio-button"));
+const el_radio_1 = __importDefault(require("./components/el-radio"));
+const el_rate_1 = __importDefault(require("./components/el-rate"));
+const el_select_1 = __importDefault(require("./components/el-select"));
+const el_option_1 = __importDefault(require("./components/el-option"));
+const el_option_group_1 = __importDefault(require("./components/el-option-group"));
 function activate(context) {
     context.subscriptions.push(vscode.languages.registerCompletionItemProvider('html', {
         provideCompletionItems(document, position) {
@@ -90,16 +99,24 @@ function activate(context) {
                 el_date_picker_1.default,
                 el_form_item_1.default,
                 el_form_1.default,
+                el_input_number_1.default,
                 el_input_1.default,
+                el_mention_1.default,
+                el_radio_group_1.default,
+                el_radio_button_1.default,
+                el_radio_1.default,
+                el_rate_1.default,
+                el_select_1.default,
+                el_option_group_1.default,
+                el_option_1.default,
                 el_row_1.default,
-                el_col_1.default,
+                el_col_1.default
             ];
             /**
              * 提取行前缀
              */
             let linePrefix = document.lineAt(position).text.substring(0, position.character);
             linePrefix = '<' + linePrefix.split('<').pop();
-            console.log('linePrefix', linePrefix);
             /**
              * 生成标准的 CompletionItem 提示框
              */
@@ -107,8 +124,10 @@ function activate(context) {
                 const res = data.map((item, index) => {
                     const key = isEvent ? item.key.replace('@', '') : item.key;
                     const instance = new vscode.CompletionItem(`${item.key}⚡`, vscode.CompletionItemKind.Property);
+                    // 如果不是 string 类型，则补上 v-bind 即 : 前缀
+                    const insertText = item.type === 'string' || item.type === 'Function' || item.type === 'enum' ? key : `:${key}`;
+                    instance.insertText = new vscode.SnippetString(insertText + '="${1:value}"');
                     instance.sortText = String(index);
-                    instance.insertText = new vscode.SnippetString(key + '="${1:value}"');
                     instance.documentation = new vscode.MarkdownString((0, template_1.markdownString)(item));
                     return instance;
                 });

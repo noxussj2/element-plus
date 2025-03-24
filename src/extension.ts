@@ -1,4 +1,8 @@
 import * as vscode from 'vscode';
+import { markdownString } from './utils/template';
+
+import ElRow from './components/el-row';
+import ElCol from './components/el-col';
 import ElButtonGroup from './components/el-button-group';
 import ElButton from './components/el-button';
 import ElContainer from './components/el-container';
@@ -20,11 +24,16 @@ import ElCheckbox from './components/el-checkbox';
 import ElDatePicker from './components/el-date-picker';
 import ElFormItem from './components/el-form-item';
 import ElForm from './components/el-form';
-
 import ElInput from './components/el-input';
-import ElRow from './components/el-row';
-import ElCol from './components/el-col';
-import { markdownString } from './utils/template';
+import ElInputNumber from './components/el-input-number';
+import ElMention from './components/el-mention';
+import ElRadioGroup from './components/el-radio-group';
+import ElRadioButton from './components/el-radio-button';
+import ElRadio from './components/el-radio';
+import ElRate from './components/el-rate';
+import ElSelect from './components/el-select';
+import ElOption from './components/el-option';
+import ElOptionGroup from './components/el-option-group';
 
 export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(
@@ -56,10 +65,19 @@ export function activate(context: vscode.ExtensionContext) {
                         ElDatePicker,
                         ElFormItem,
                         ElForm,
-                        
+                        ElInputNumber,
                         ElInput,
+                        ElMention,
+                        ElRadioGroup,
+                        ElRadioButton,
+                        ElRadio,
+                        ElRate,
+                        ElSelect,
+                        ElOptionGroup,
+                        ElOption,
+
                         ElRow,
-                        ElCol,
+                        ElCol
                     ];
 
                     /**
@@ -67,8 +85,6 @@ export function activate(context: vscode.ExtensionContext) {
                      */
                     let linePrefix: any = document.lineAt(position).text.substring(0, position.character);
                     linePrefix = '<' + linePrefix.split('<').pop();
-
-                    console.log('linePrefix', linePrefix);
 
                     /**
                      * 生成标准的 CompletionItem 提示框
@@ -78,10 +94,12 @@ export function activate(context: vscode.ExtensionContext) {
                             const key = isEvent ? item.key.replace('@', '') : item.key;
                             const instance = new vscode.CompletionItem(`${item.key}⚡`, vscode.CompletionItemKind.Property);
 
-                            instance.sortText = String(index);
-                            instance.insertText = new vscode.SnippetString(key + '="${1:value}"');
-                            instance.documentation = new vscode.MarkdownString(markdownString(item));
+                            // 如果不是 string 类型，则补上 v-bind 即 : 前缀
+                            const insertText = item.type === 'string' || item.type === 'Function' || item.type === 'enum' ? key : `:${key}`;
+                            instance.insertText = new vscode.SnippetString(insertText + '="${1:value}"');
 
+                            instance.sortText = String(index);
+                            instance.documentation = new vscode.MarkdownString(markdownString(item));
                             return instance;
                         });
 
