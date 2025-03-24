@@ -1,63 +1,112 @@
 {
     /**
-     * Vue3.0
-     */
-    "v-for": {
-        "prefix": "v-for⚡",
-        "body": ["v-for=\"(item, index) in $1\" :key=\"index\""],
-        "description": "v-for"
-    },
-
-    "img": {
-        "prefix": "img⚡",
-        "body": ["<img alt=\"\" src=\"@/assets/$1.png\" />"],
-        "description": "img"
-    },
-
-    /**
      * Basic 基础组件
      */
+    "Button 按钮组": {
+        "prefix": "<el-button-group⚡",
+        "body": [
+            "<el-button-group>",
+            "    <el-button type=\"primary\" :icon=\"ArrowLeft\">Previous Page</el-button>",
+            "    <el-button type=\"primary\">",
+            "        Next Page<el-icon class=\"el-icon--right\"><ArrowRight /></el-icon>",
+            "    </el-button>",
+            "</el-button-group>"
+        ],
+        "description": "Button 按钮组"
+    },
     "Button 按钮": {
-        "prefix": "el-button🌱",
+        "prefix": "<el-button⚡",
         "body": ["<el-button>${1:Default}</el-button>"],
         "description": "Button 按钮"
     },
-
-    "Layout 行布局": {
-        "prefix": "el-row🌱",
-        "body": ["<el-row>$1</el-row>"],
-        "description": "Layout 行布局"
+    "Container 布局容器": {
+        "prefix": "<el-container⚡",
+        "body": [
+            "<el-container>",
+            "    <el-header>Header</el-header>",
+            "    <el-container>",
+            "        <el-aside width=\"200px\">Aside</el-aside>",
+            "        <el-container>",
+            "            <el-main>Main</el-main>",
+            "            <el-footer>Footer</el-footer>",
+            "        </el-container>",
+            "    </el-container>",
+            "</el-container>"
+        ],
+        "description": "Container 布局容器"
+    },
+    "Icon 图标": {
+        "prefix": "<el-icon⚡",
+        "body": ["<el-icon size=\"20px\" color=\"#00f\">", "    <Edit />", "</el-icon>"],
+        "description": "Icon 图标"
     },
 
-    "Layout 列布局": {
-        "prefix": "el-col🌱",
-        "body": ["<el-col>$1</el-col>"],
-        "description": "Layout 列布局"
+    "Row 布局": {
+        "prefix": "<el-row⚡",
+        "body": [
+            "<el-row :gutter=\"20\">",
+            "    <el-col :span=\"6\">A</el-col>",
+            "    <el-col :span=\"6\">B</el-col>",
+            "    <el-col :span=\"6\">C</el-col>",
+            "    <el-col :span=\"6\">D</el-col>",
+            "</el-row>"
+        ],
+        "description": "Row 布局"
+    },
+
+    "Col 布局": {
+        "prefix": "<el-col⚡",
+        "body": ["<el-col :span=\"${1:6}\"></el-col>"],
+        "description": "Col 布局"
     },
 
     "Link 链接": {
-        "prefix": "el-link🌱",
+        "prefix": "<el-link⚡",
         "body": ["<el-link href=\"${2:https://element-plus.org}\" target=\"_blank\">${1:default}</el-link>"],
         "description": "Link 链接"
     },
 
+    "Text 文本": {
+        "prefix": "<el-text⚡",
+        "body": ["<el-text type=\"primary\">Primary</el-text>"],
+        "description": "Text 文本"
+    },
+
     "Scrollbar 滚动条": {
-        "prefix": "el-scrollbar🌱",
-        "body": ["<el-scrollbar height=\"400px\">$1</el-scrollbar>"],
+        "prefix": "<el-scrollbar⚡",
+        "body": ["<el-scrollbar height=\"400px\">", "    <p v-for=\"item in 20\" :key=\"item\" class=\"scrollbar-demo-item\">{{ item }}</p>", "</el-scrollbar>"],
         "description": "Scrollbar 滚动条"
     },
 
     "Space 间距": {
-        "prefix": "el-space🌱",
-        "body": ["<el-space :size=\"20\" spacer=\"|\">$1</el-space>"],
+        "prefix": "<el-space⚡",
+        "body": ["<el-space :size=\"20\">$1</el-space>"],
         "description": "Space 间距"
     },
-    
+
+    "Autocomplete 自动补全输入框": {
+        "prefix": "<el-autocomplete⚡",
+        "body": ["<el-autocomplete v-model=\"state1\" :fetch-suggestions=\"querySearch\" clearable placeholder=\"Please Input\" @select=\"handleSelect\"/>"],
+        "description": "Autocomplete 自动补全输入框"
+    },
+
+    "Cascader 级联选择器": {
+        "prefix": "<el-cascader⚡",
+        "body": ["<el-cascader v-model=\"value\" :options=\"options\" @change=\"handleChange\" />"],
+        "description": "Cascader 级联选择器"
+    },
+
+    "Cascader Panel 级联面板": {
+        "prefix": "<el-cascader-panel⚡",
+        "body": ["<el-cascader-panel :options=\"options\" />"],
+        "description": "Cascader Panel 级联面板"
+    },
+
     /**
      * Form 表单组件
      */
-    "Checkbox 多选框": {
-        "prefix": "el-checkbox🌱",
+    "Checkbox 多选框组": {
+        "prefix": "<el-checkbox-group⚡",
         "body": [
             "<el-checkbox-group v-model=\"${1:checkList}\">",
             "    <el-checkbox label=\"Option 1\" />",
@@ -65,41 +114,57 @@
             "    <el-checkbox label=\"Option 3\" />",
             "</el-checkbox-group>"
         ],
+        "description": "Checkbox 多选框组"
+    },
+
+    "Checkbox 多选框": {
+        "prefix": "<el-checkbox⚡",
+        "body": [
+            "<el-checkbox v-model=\"checked1\" label=\"Option 1\" size=\"large\" />",
+        ],
         "description": "Checkbox 多选框"
     },
 
+    "ColorPicker 颜色选择器": {
+        "prefix": "<el-color-picker⚡",
+        "body": [
+            "<el-color-picker v-model=\"color1\" />",
+        ],
+        "description": "ColorPicker 颜色选择器"
+    },
+
     "Date Picker 日期选择器": {
-        "prefix": "el-date-picker🌱",
+        "prefix": "<el-date-picker⚡",
         "body": ["<el-date-picker v-model=\"${1:value}\" type=\"date\" placeholder=\"请选择日期\" />"],
         "description": "Date Picker 日期选择器"
     },
 
     "Date Picker 年份选择器": {
-        "prefix": "el-date-picker--year🌱",
+        "prefix": "<el-date-picker--year⚡",
         "body": ["<el-date-picker v-model=\"${1:value}\" type=\"year\" placeholder=\"请选择年份\" />"],
         "description": "Date Picker 年份选择器"
     },
 
     "Date Picker 月份选择器": {
-        "prefix": "el-date-picker--month🌱",
+        "prefix": "<el-date-picker--month⚡",
         "body": ["<el-date-picker v-model=\"${1:value}\" type=\"month\" placeholder=\"请选择月份\" />"],
         "description": "Date Picker 月份选择器"
     },
 
     "Date Picker 日期范围选择器": {
-        "prefix": "el-date-picker--daterange🌱",
+        "prefix": "<el-date-picker--daterange⚡",
         "body": ["<el-date-picker v-model=\"${1:value}\" type=\"daterange\" range-separator=\"至\" start-placeholder=\"开始日期\" end-placeholder=\"结束日期\" />"],
         "description": "Date Picker 日期范围选择器"
     },
 
     "Date Picker 日期时间选择器": {
-        "prefix": "el-date-picker--datetime🌱",
+        "prefix": "<el-date-picker--datetime⚡",
         "body": ["<el-date-picker v-model=\"${1:value}\" type=\"datetime\" placeholder=\"请选择日期时间\" />"],
         "description": "Date Picker 日期时间选择器"
     },
 
     "Form 表单": {
-        "prefix": "el-form🌱",
+        "prefix": "<el-form⚡",
         "body": [
             "<el-form ref=\"formRef\" :model=\"form\" label-width=\"auto\"> ",
             "    <el-form-item label=\"Activity name\" prop=\"name\">A</el-form-item>",
@@ -110,26 +175,34 @@
         "description": "Form 表单"
     },
 
+    "Form 表单项": {
+        "prefix": "<el-form-item⚡",
+        "body": [
+            "<el-form-item label=\"Activity name\" prop=\"name\">A</el-form-item>",
+        ],
+        "description": "Form 表单项"
+    },
+
     "Input 输入框": {
-        "prefix": "el-input🌱",
+        "prefix": "<el-input⚡",
         "body": ["<el-input v-model=\"${1:input}\" placeholder=\"请输入\" />"],
         "description": "Input 输入框"
     },
 
     "Input 输入框（密码）": {
-        "prefix": "el-input--password🌱",
+        "prefix": "<el-input--password⚡",
         "body": ["<el-input v-model=\"${1:input}\" type=\"password\" placeholder=\"请输入\" show-password />"],
         "description": "Input 输入框（密码）"
     },
 
     "Input 输入框（文本域）": {
-        "prefix": "el-input--textarea🌱",
+        "prefix": "<el-input--textarea⚡",
         "body": ["<el-input v-model=\"${1:textarea1}\" :rows=\"5\" type=\"textarea\" placeholder=\"请输入\" />"],
         "description": "Input 输入框（文本域）"
     },
 
     "Radio 单选框": {
-        "prefix": "el-radio🌱",
+        "prefix": "<el-radio⚡",
         "body": [
             "<el-radio-group v-model=\"${1:radio}\">",
             "    <el-radio label=\"A\">Option A</el-radio>",
@@ -141,7 +214,7 @@
     },
 
     "Select 选择器": {
-        "prefix": "el-select🌱",
+        "prefix": "<el-select⚡",
         "body": [
             "<el-select v-model=\"value\" placeholder=\"请选择\">",
             "    <el-option label=\"Options1\" value=\"1\" />",
@@ -152,7 +225,7 @@
     },
 
     "Select 选择器（多选）": {
-        "prefix": "el-select--multiple🌱",
+        "prefix": "<el-select--multiple⚡",
         "body": [
             "<el-select v-model=\"value\" multiple collapse-tags placeholder=\"请选择\">",
             "    <el-option label=\"Options1\" value=\"1\" />",
@@ -163,19 +236,19 @@
     },
 
     "Switch 开关": {
-        "prefix": "el-switch🌱",
+        "prefix": "<el-switch⚡",
         "body": ["<el-switch v-model=\"${1:value}\" />"],
         "description": "Switch 开关"
     },
 
     "Time Picker 时间选择器": {
-        "prefix": "el-time-picker🌱",
+        "prefix": "<el-time-picker⚡",
         "body": ["<el-time-picker v-model=\"${1:value}\" placeholder=\"请选择时间\" />"],
         "description": "Time Picker 时间选择器"
     },
 
     "Time Select 时间选择器": {
-        "prefix": "el-time-select🌱",
+        "prefix": "<el-time-select⚡",
         "body": ["<el-time-select v-model=\"${1:value}\" start=\"08:30\" step=\"00:15\" end=\"18:30\" placeholder=\"请选择时间\" />"],
         "description": "Time Select 时间选择器"
     },
@@ -184,13 +257,13 @@
      * Data 数据展示
      */
     "Calendar 日历": {
-        "prefix": "el-calendar🌱",
+        "prefix": "<el-calendar⚡",
         "body": ["<el-calendar v-model=\"${1:value}\" />"],
         "description": "Calendar 日历"
     },
 
     "Carousel 走马灯": {
-        "prefix": "el-carousel🌱",
+        "prefix": "<el-carousel⚡",
         "body": [
             "<el-carousel trigger=\"click\" height=\"150px\">",
             "    <el-carousel-item> container1 </el-carousel-item>",
@@ -202,13 +275,13 @@
     },
 
     "Image 图片": {
-        "prefix": "el-image🌱",
+        "prefix": "<el-image⚡",
         "body": ["<el-image :src=\"${1:url}\" :preview-src-list=\"[${1:url}]\" fit=\"cover\" />"],
         "description": "Image 图片"
     },
 
     "Pagination 分页": {
-        "prefix": "el-pagination🌱",
+        "prefix": "<el-pagination⚡",
         "body": [
             "<el-pagination",
             "    v-model:current-page=\"currentPage\"",
@@ -225,7 +298,7 @@
     },
 
     "Table 表格": {
-        "prefix": "el-table🌱",
+        "prefix": "<el-table⚡",
         "body": [
             "<el-table :data=\"tableData\" :style=\"{ width: '100%' }\" >",
             "    <el-table-column prop=\"date\" label=\"Date\" width=\"180\" />",
@@ -237,7 +310,7 @@
     },
 
     "Tag 标签": {
-        "prefix": "el-tag🌱",
+        "prefix": "<el-tag⚡",
         "body": [
             "<el-tag :style=\"{ marginRight: '6px' }\">Tag 1</el-tag>",
             "<el-tag :style=\"{ marginRight: '6px' }\" type=\"success\">Tag 2</el-tag>",
@@ -252,7 +325,7 @@
      * Navigation 导航
      */
     "Breadcrumb 面包屑": {
-        "prefix": "el-breadcrumb🌱",
+        "prefix": "<el-breadcrumb⚡",
         "body": [
             "<el-breadcrumb separator=\"/\">",
             "    <el-breadcrumb-item :to=\"{ path: '/' }\">homepage</el-breadcrumb-item>",
@@ -265,7 +338,7 @@
     },
 
     "Tabs 标签页": {
-        "prefix": "el-tabs🌱",
+        "prefix": "<el-tabs⚡",
         "body": [
             "<el-tabs v-model=\"activeName\" class=\"demo-tabs\" @tab-click=\"handleClick\">",
             "    <el-tab-pane label=\"User\" name=\"first\">User</el-tab-pane>",
@@ -281,7 +354,7 @@
      * Feedback 反馈组件
      */
     "Dialog 对话框": {
-        "prefix": "el-dialog🌱",
+        "prefix": "<el-dialog⚡",
         "body": [
             "<el-dialog v-model=\"${1:show}\" title=\"Shipping address\">",
             "    <main>container</main>",
@@ -297,7 +370,7 @@
     },
 
     "Drawer 抽屉": {
-        "prefix": "el-drawer🌱",
+        "prefix": "<el-drawer⚡",
         "body": [
             "<el-drawer v-model=\"${1:show}\" title=\"I have a nested table inside!\" direction=\"rtl\" size=\"50%\">",
             "    <main>container</main>",

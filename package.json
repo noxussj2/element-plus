@@ -1,26 +1,22 @@
 {
     "name": "element-plus",
-    "repository": "https://github.com/noxussj2/element-plus",
-    "icon": "images/element-plus.png",
-    "displayName": "Element Plus",
-    "description": "Element Plus Snippets",
-    "version": "0.0.22",
+    "displayName": "element-plus",
+    "description": "",
+    "version": "0.0.1",
     "engines": {
-        "vscode": "^1.46.0"
+        "vscode": "^1.90.0"
     },
     "categories": [
-        "Snippets"
+        "Other"
     ],
+    "activationEvents": [
+        "onCommand:extension.helloWorld",
+        "onLanguage:html",
+        "onStartupFinished"
+    ],
+    "main": "./out/extension.js",
     "contributes": {
         "snippets": [
-            {
-                "language": "typescript",
-                "path": "./snippets/script.code-snippets"
-            },
-            {
-                "language": "scss",
-                "path": "./snippets/scss.code-snippets"
-            },
             {
                 "language": "vue",
                 "path": "./snippets/template.code-snippets"
@@ -28,13 +24,51 @@
             {
                 "language": "html",
                 "path": "./snippets/template.code-snippets"
-            },
+            }
+        ],
+        "languages": [
             {
-                "language": "vue",
-                "path": "./snippets/vue.code-snippets"
+                "id": "html",
+                "extensions": [
+                    ".html",
+                    ".vue"
+                ],
+                "aliases": [
+                    "HTML",
+                    "html"
+                ]
+            }
+        ],
+        "completionItemProvider": [
+            {
+                "language": "html",
+                "triggerCharacters": [
+                    "<",
+                    " "
+                ]
             }
         ]
     },
-    "publisher": "noxussj",
-    "license": "MIT"
+    "scripts": {
+        "vscode:prepublish": "yarn run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "yarn run compile && yarn run lint",
+        "lint": "eslint src",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.9",
+        "@types/node": "20.x",
+        "@types/vscode": "^1.95.0",
+        "@typescript-eslint/eslint-plugin": "^8.10.0",
+        "@typescript-eslint/parser": "^8.7.0",
+        "@vscode/test-cli": "^0.0.10",
+        "@vscode/test-electron": "^2.4.1",
+        "eslint": "^9.13.0",
+        "typescript": "^5.6.3"
+    },
+    "dependencies": {
+        "vscode-html-languageservice": "^5.3.1"
+    }
 }
