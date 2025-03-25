@@ -210,23 +210,83 @@
         "description": "Select 选择器"
     },
 
+    "Virtualized Select 虚拟化选择器": {
+        "prefix": "<el-select-v2⚡",
+        "body": [
+            "<el-select-v2 v-model=\"value\" :options=\"options\" placeholder=\"Please select\" size=\"large\" />",
+        ],
+        "description": "Virtualized Select 虚拟化选择器"
+    },
+
+    "Slider 滑块": {
+        "prefix": "<el-slider⚡",
+        "body": [
+            "<el-slider v-model=\"value1\" />"
+        ],
+        "description": "Slider 滑块"
+    },
 
     "Switch 开关": {
         "prefix": "<el-switch⚡",
         "body": ["<el-switch v-model=\"${1:value}\" />"],
         "description": "Switch 开关"
     },
-
-    "Time Picker 时间选择器": {
+    "TimePicker 时间选择器": {
         "prefix": "<el-time-picker⚡",
-        "body": ["<el-time-picker v-model=\"${1:value}\" placeholder=\"请选择时间\" />"],
-        "description": "Time Picker 时间选择器"
+        "body": [
+            "<el-time-picker v-model=\"value1\" placeholder=\"Arbitrary time\" />"
+        ],
+        "description": "TimePicker 时间选择器"
     },
 
-    "Time Select 时间选择器": {
+    "TimeSelect 时间选择": {
         "prefix": "<el-time-select⚡",
-        "body": ["<el-time-select v-model=\"${1:value}\" start=\"08:30\" step=\"00:15\" end=\"18:30\" placeholder=\"请选择时间\" />"],
-        "description": "Time Select 时间选择器"
+        "body": [
+            "<el-time-select v-model=\"value\" start=\"08:30\" step=\"00:15\" end=\"18:30\" placeholder=\"Select time\" />"
+        ],
+        "description": "TimeSelect 时间选择"
+    },
+
+    
+    "Transfer 穿梭框": {
+        "prefix": "<el-transfer⚡",
+        "body": [
+            "<el-transfer v-model=\"value\" :data=\"data\" />"
+        ],
+        "description": "Transfer 穿梭框"
+    },
+
+    "TreeSelect 树形选择": {
+        "prefix": "<el-tree-select⚡",
+        "body": [
+            "<el-tree-select v-model=\"value\" :data=\"data\" :render-after-expand=\"false\" />"
+        ],
+        "description": "TreeSelect 树形选择"
+    },
+
+    "Upload 上传": {
+        "prefix": "<el-upload⚡",
+        "body": [
+            "<el-upload",
+            "    v-model:file-list=\"fileList\"",
+            "    class=\"upload-demo\"",
+            "    action=\"https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15\"",
+            "    multiple",
+            "    :on-preview=\"handlePreview\"",
+            "    :on-remove=\"handleRemove\"",
+            "    :before-remove=\"beforeRemove\"",
+            "    :limit=\"3\"",
+            "    :on-exceed=\"handleExceed\"",
+            "  >",
+            "    <el-button type=\"primary\">Click to upload</el-button>",
+            "    <template #tip>",
+            "      <div class=\"el-upload__tip\">",
+            "        jpg/png files with a size less than 500KB.",
+            "      </div>",
+            "    </template>",
+            "</el-upload>"
+        ],
+        "description": "Upload 上传"
     },
 
     /**

@@ -34,6 +34,14 @@ import ElRate from './components/el-rate';
 import ElSelect from './components/el-select';
 import ElOption from './components/el-option';
 import ElOptionGroup from './components/el-option-group';
+import ElSelectV2 from './components/el-select-v2';
+import ElSlider from './components/el-slider';
+import ElSwitch from './components/el-switch';
+import ElTimePicker from './components/el-time-picker';
+import ElTimeSelect from './components/el-time-select';
+import ElTransfer from './components/el-transfer';
+import ElTreeSelect from './components/el-tree-select';
+import ElUpload from './components/el-upload';
 
 export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(
@@ -72,12 +80,19 @@ export function activate(context: vscode.ExtensionContext) {
                         ElRadioButton,
                         ElRadio,
                         ElRate,
+                        ElSelectV2,
                         ElSelect,
                         ElOptionGroup,
                         ElOption,
-
                         ElRow,
-                        ElCol
+                        ElCol,
+                        ElSlider,
+                        ElSwitch,
+                        ElTimePicker,
+                        ElTimeSelect,
+                        ElTransfer,
+                        ElTreeSelect,
+                        ElUpload
                     ];
 
                     /**

@@ -72,6 +72,14 @@ const el_rate_1 = __importDefault(require("./components/el-rate"));
 const el_select_1 = __importDefault(require("./components/el-select"));
 const el_option_1 = __importDefault(require("./components/el-option"));
 const el_option_group_1 = __importDefault(require("./components/el-option-group"));
+const el_select_v2_1 = __importDefault(require("./components/el-select-v2"));
+const el_slider_1 = __importDefault(require("./components/el-slider"));
+const el_switch_1 = __importDefault(require("./components/el-switch"));
+const el_time_picker_1 = __importDefault(require("./components/el-time-picker"));
+const el_time_select_1 = __importDefault(require("./components/el-time-select"));
+const el_transfer_1 = __importDefault(require("./components/el-transfer"));
+const el_tree_select_1 = __importDefault(require("./components/el-tree-select"));
+const el_upload_1 = __importDefault(require("./components/el-upload"));
 function activate(context) {
     context.subscriptions.push(vscode.languages.registerCompletionItemProvider('html', {
         provideCompletionItems(document, position) {
@@ -106,11 +114,19 @@ function activate(context) {
                 el_radio_button_1.default,
                 el_radio_1.default,
                 el_rate_1.default,
+                el_select_v2_1.default,
                 el_select_1.default,
                 el_option_group_1.default,
                 el_option_1.default,
                 el_row_1.default,
-                el_col_1.default
+                el_col_1.default,
+                el_slider_1.default,
+                el_switch_1.default,
+                el_time_picker_1.default,
+                el_time_select_1.default,
+                el_transfer_1.default,
+                el_tree_select_1.default,
+                el_upload_1.default
             ];
             /**
              * 提取行前缀
