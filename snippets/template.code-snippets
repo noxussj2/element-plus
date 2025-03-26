@@ -280,31 +280,68 @@
             "  >",
             "    <el-button type=\"primary\">Click to upload</el-button>",
             "    <template #tip>",
-            "      <div class=\"el-upload__tip\">",
-            "        jpg/png files with a size less than 500KB.",
-            "      </div>",
+            "        <div class=\"el-upload__tip\">",
+            "            jpg/png files with a size less than 500KB.",
+            "        </div>",
             "    </template>",
             "</el-upload>"
         ],
         "description": "Upload 上传"
     },
+    
 
     /**
      * Data 数据展示
      */
+    "Avatar 头像": {
+        "prefix": "<el-avatar⚡",
+        "body": [
+            "<el-avatar :size=\"50\" :src=\"circleUrl\" />"
+        ],
+        "description": "Avatar 头像"
+    },
+
+    "Badge 徽章": {
+        "prefix": "<el-badge⚡",
+        "body": [
+            "<el-badge :value=\"12\">",
+            "    <el-button>comments</el-button>",
+            "</el-badge>"
+        ],
+        "description": "Badge 徽章"
+    },
+
     "Calendar 日历": {
         "prefix": "<el-calendar⚡",
-        "body": ["<el-calendar v-model=\"${1:value}\" />"],
+        "body": [
+            "<el-calendar v-model=\"value\" />"
+        ],
         "description": "Calendar 日历"
+    },
+
+    "Card 卡片": {
+        "prefix": "<el-card⚡",
+        "body": [
+            "<el-card>",
+            "    <template #header>",
+            "        <div class=\"card-header\">",
+            "            <span>Card name</span>",
+            "        </div>",
+            "    </template>",
+            "    <p v-for=\"o in 4\" :key=\"o\" class=\"text item\">{{ 'List item ' + o }}</p>",
+            "    <template #footer>Footer content</template>",
+            "</el-card>"
+        ],
+        "description": "Card 卡片"
     },
 
     "Carousel 走马灯": {
         "prefix": "<el-carousel⚡",
         "body": [
-            "<el-carousel trigger=\"click\" height=\"150px\">",
-            "    <el-carousel-item> container1 </el-carousel-item>",
-            "    <el-carousel-item> container2 </el-carousel-item>",
-            "    <el-carousel-item> container3 </el-carousel-item>",
+            "<el-carousel height=\"150px\">",
+            "    <el-carousel-item v-for=\"item in 4\" :key=\"item\">",
+            "        <h3 class=\"small justify-center\" text=\"2xl\">{{ item }}</h3>",
+            "    </el-carousel-item>",
             "</el-carousel>"
         ],
         "description": "Carousel 走马灯"

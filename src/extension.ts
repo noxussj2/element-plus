@@ -42,6 +42,12 @@ import ElTimeSelect from './components/el-time-select';
 import ElTransfer from './components/el-transfer';
 import ElTreeSelect from './components/el-tree-select';
 import ElUpload from './components/el-upload';
+import ElAvatar from './components/el-avatar';
+import ElBadge from './components/el-badge';
+import ElCalendar from './components/el-calendar';
+import ElCard from './components/el-card';
+import ElCarousel from './components/el-carousel';
+import ElCarouselItem from './components/el-carousel-item';
 
 export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(
@@ -92,7 +98,13 @@ export function activate(context: vscode.ExtensionContext) {
                         ElTimeSelect,
                         ElTransfer,
                         ElTreeSelect,
-                        ElUpload
+                        ElUpload,
+                        ElAvatar,
+                        ElBadge,
+                        ElCalendar,
+                        ElCard,
+                        ElCarouselItem,
+                        ElCarousel
                     ];
 
                     /**

@@ -80,6 +80,12 @@ const el_time_select_1 = __importDefault(require("./components/el-time-select"))
 const el_transfer_1 = __importDefault(require("./components/el-transfer"));
 const el_tree_select_1 = __importDefault(require("./components/el-tree-select"));
 const el_upload_1 = __importDefault(require("./components/el-upload"));
+const el_avatar_1 = __importDefault(require("./components/el-avatar"));
+const el_badge_1 = __importDefault(require("./components/el-badge"));
+const el_calendar_1 = __importDefault(require("./components/el-calendar"));
+const el_card_1 = __importDefault(require("./components/el-card"));
+const el_carousel_1 = __importDefault(require("./components/el-carousel"));
+const el_carousel_item_1 = __importDefault(require("./components/el-carousel-item"));
 function activate(context) {
     context.subscriptions.push(vscode.languages.registerCompletionItemProvider('html', {
         provideCompletionItems(document, position) {
@@ -126,7 +132,13 @@ function activate(context) {
                 el_time_select_1.default,
                 el_transfer_1.default,
                 el_tree_select_1.default,
-                el_upload_1.default
+                el_upload_1.default,
+                el_avatar_1.default,
+                el_badge_1.default,
+                el_calendar_1.default,
+                el_card_1.default,
+                el_carousel_item_1.default,
+                el_carousel_1.default
             ];
             /**
              * 提取行前缀
