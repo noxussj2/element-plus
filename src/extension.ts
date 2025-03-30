@@ -50,6 +50,14 @@ import ElCarousel from './components/el-carousel';
 import ElCarouselItem from './components/el-carousel-item';
 import ElCollapseItem from './components/el-collapse-item';
 import ElCollapse from './components/el-collapse';
+import ElDescriptionsItem from './components/el-descriptions-item';
+import ElDescriptions from './components/el-descriptions';
+import ElEmpty from './components/el-empty';
+import ElImageViewer from './components/el-image-viewer';
+import ElImage from './components/el-image';
+import ElPagination from './components/el-pagination';
+import ElProgress from './components/el-progress';
+import ElResult from './components/el-result';
 
 export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(
@@ -109,6 +117,14 @@ export function activate(context: vscode.ExtensionContext) {
                         ElCard,
                         ElCarouselItem,
                         ElCarousel,
+                        ElDescriptionsItem,
+                        ElDescriptions,
+                        ElEmpty,
+                        ElImageViewer,
+                        ElImage,
+                        ElPagination,
+                        ElProgress,
+                        ElResult
                     ];
 
                     /**

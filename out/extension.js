@@ -88,6 +88,14 @@ const el_carousel_1 = __importDefault(require("./components/el-carousel"));
 const el_carousel_item_1 = __importDefault(require("./components/el-carousel-item"));
 const el_collapse_item_1 = __importDefault(require("./components/el-collapse-item"));
 const el_collapse_1 = __importDefault(require("./components/el-collapse"));
+const el_descriptions_item_1 = __importDefault(require("./components/el-descriptions-item"));
+const el_descriptions_1 = __importDefault(require("./components/el-descriptions"));
+const el_empty_1 = __importDefault(require("./components/el-empty"));
+const el_image_viewer_1 = __importDefault(require("./components/el-image-viewer"));
+const el_image_1 = __importDefault(require("./components/el-image"));
+const el_pagination_1 = __importDefault(require("./components/el-pagination"));
+const el_progress_1 = __importDefault(require("./components/el-progress"));
+const el_result_1 = __importDefault(require("./components/el-result"));
 function activate(context) {
     context.subscriptions.push(vscode.languages.registerCompletionItemProvider('html', {
         provideCompletionItems(document, position) {
@@ -143,6 +151,14 @@ function activate(context) {
                 el_card_1.default,
                 el_carousel_item_1.default,
                 el_carousel_1.default,
+                el_descriptions_item_1.default,
+                el_descriptions_1.default,
+                el_empty_1.default,
+                el_image_viewer_1.default,
+                el_image_1.default,
+                el_pagination_1.default,
+                el_progress_1.default,
+                el_result_1.default
             ];
             /**
              * 提取行前缀
