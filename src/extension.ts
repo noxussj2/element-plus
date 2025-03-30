@@ -48,6 +48,8 @@ import ElCalendar from './components/el-calendar';
 import ElCard from './components/el-card';
 import ElCarousel from './components/el-carousel';
 import ElCarouselItem from './components/el-carousel-item';
+import ElCollapseItem from './components/el-collapse-item';
+import ElCollapse from './components/el-collapse';
 
 export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(
@@ -90,6 +92,8 @@ export function activate(context: vscode.ExtensionContext) {
                         ElSelect,
                         ElOptionGroup,
                         ElOption,
+                        ElCollapseItem,
+                        ElCollapse,
                         ElRow,
                         ElCol,
                         ElSlider,
@@ -104,7 +108,7 @@ export function activate(context: vscode.ExtensionContext) {
                         ElCalendar,
                         ElCard,
                         ElCarouselItem,
-                        ElCarousel
+                        ElCarousel,
                     ];
 
                     /**

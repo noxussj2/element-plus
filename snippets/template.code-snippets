@@ -347,33 +347,93 @@
         "description": "Carousel 走马灯"
     },
 
-    "Image 图片": {
-        "prefix": "<el-image⚡",
-        "body": ["<el-image :src=\"${1:url}\" :preview-src-list=\"[${1:url}]\" fit=\"cover\" />"],
-        "description": "Image 图片"
+    "Collapse 折叠面板": {
+        "prefix": "<el-collapse⚡",
+        "body": [
+            "<el-collapse v-model=\"activeNames\" @change=\"handleChange\">",
+            "    <el-collapse-item title=\"Consistency\" name=\"1\">",
+            "        <div>Title</div>",
+            "        <div>Container</div>",
+            "    </el-collapse-item>",
+            "    <el-collapse-item title=\"Feedback\" name=\"2\">",
+            "        <div>Title2</div>",
+            "        <div>Container2</div>",
+            "    </el-collapse-item>",
+            "</el-collapse>"
+        ],
+        "description": "Collapse 折叠面板"
     },
 
+
+
+    "Descriptions 描述列表": {
+        "prefix": "<el-descriptions⚡",
+        "body": [
+            "<el-descriptions title=\"User Info\">",
+            "    <el-descriptions-item label=\"Username\">kooriookami</el-descriptions-item>",
+            "    <el-descriptions-item label=\"Telephone\">18100000000</el-descriptions-item>",
+            "    <el-descriptions-item label=\"Place\">Suzhou</el-descriptions-item>",
+            "    <el-descriptions-item label=\"Remarks\">",
+            "        <el-tag size=\"small\">School</el-tag>",
+            "    </el-descriptions-item>",
+            "    <el-descriptions-item label=\"Address\">",
+            "        No.1188, Wuzhong Avenue, Wuzhong District, Suzhou, Jiangsu Province",
+            "    </el-descriptions-item>",
+            "</el-descriptions>"
+        ],
+        "description": "Descriptions 描述列表"
+    },
+
+    "Empty 空状态": {
+        "prefix": "<el-empty⚡",
+        "body": [
+            "<el-empty description=\"description\" />"
+        ],
+        "description": "Empty 空状态"
+    },
+    "Image 图片": {
+        "prefix": "<el-image⚡",
+        "body": [
+            "<el-image style=\"width: 100px; height: 100px\" :src=\"url\" :fit=\"fit\" />"
+        ],
+        "description": "Image 图片"
+    },
     "Pagination 分页": {
         "prefix": "<el-pagination⚡",
         "body": [
-            "<el-pagination",
-            "    v-model:current-page=\"currentPage\"",
-            "    v-model:page-size=\"pageSize\"",
-            "    :page-sizes=\"[100, 200, 300, 400]\"",
-            "    background",
-            "    layout=\"total, sizes, prev, pager, next, jumper\"",
-            "    :total=\"400\"",
-            "    @size-change=\"handleSizeChange\"",
-            "    @current-change=\"handleCurrentChange\"",
-            "/>"
+            "<el-pagination layout=\"prev, pager, next\" :total=\"50\" />"
         ],
         "description": "Pagination 分页"
     },
-
+    "Progress 进度条": {
+        "prefix": "<el-progress⚡",
+        "body": [
+            "<el-progress :percentage=\"100\" status=\"success\" />"
+        ],
+        "description": "Progress 进度条"
+    },
+    "Result 结果": {
+        "prefix": "<el-result⚡",
+        "body": [
+            "<el-result icon=\"success\" title=\"Success Tip\" sub-title=\"Please follow the instructions\">",
+            "    <template #extra>",
+            "        <el-button type=\"primary\">Back</el-button>",
+            "    </template>",
+            "</el-result>"
+        ],
+        "description": "Result 结果"
+    },
+    "Skeleton 骨架屏": {
+        "prefix": "<el-skeleton⚡",
+        "body": [
+            "<el-skeleton />"
+        ],
+        "description": "Skeleton 骨架屏"
+    },
     "Table 表格": {
         "prefix": "<el-table⚡",
         "body": [
-            "<el-table :data=\"tableData\" :style=\"{ width: '100%' }\" >",
+            "<el-table :data=\"tableData\" style=\"width: 100%\">",
             "    <el-table-column prop=\"date\" label=\"Date\" width=\"180\" />",
             "    <el-table-column prop=\"name\" label=\"Name\" width=\"180\" />",
             "    <el-table-column prop=\"address\" label=\"Address\" />",
@@ -381,39 +441,203 @@
         ],
         "description": "Table 表格"
     },
-
+    "Virtualized Table 虚拟化表格": {
+        "prefix": "<el-table-v2⚡",
+        "body": [
+            "<el-table-v2 :columns=\"columns\" :data=\"data\" :width=\"700\" :height=\"400\" fixed />"
+        ],
+        "description": "Virtualized Table 虚拟化表格"
+    },
     "Tag 标签": {
         "prefix": "<el-tag⚡",
         "body": [
-            "<el-tag :style=\"{ marginRight: '6px' }\">Tag 1</el-tag>",
-            "<el-tag :style=\"{ marginRight: '6px' }\" type=\"success\">Tag 2</el-tag>",
-            "<el-tag :style=\"{ marginRight: '6px' }\" type=\"info\">Tag 3</el-tag>",
-            "<el-tag :style=\"{ marginRight: '6px' }\" type=\"warning\">Tag 4</el-tag>",
-            "<el-tag :style=\"{ marginRight: '6px' }\" type=\"danger\">Tag 5</el-tag>"
+            "<el-tag type=\"primary\">Tag 1</el-tag>"
         ],
         "description": "Tag 标签"
+    },
+    "Timeline 时间线": {
+        "prefix": "<el-timeline⚡",
+        "body": [
+            "<el-timeline style=\"max-width: 600px\">",
+            "    <el-timeline-item v-for=\"(activity, index) in activities\" :key=\"index\" :timestamp=\"activity.timestamp\">",
+            "        {{ activity.content }}",
+            "    </el-timeline-item>",
+            "</el-timeline>"
+        ],
+        "description": "Timeline 时间线"
+    },
+    "Tour 漫游式引导": {
+        "prefix": "<el-tour⚡",
+        "body": [
+            "<el-tour v-model=\"open\">",
+            "    <el-tour-step :target=\"ref1?.$el\" title=\"Upload File\">",
+            "        <img style=\"width: 240px\" src=\"https://element-plus.org/images/element-plus-logo.svg\" alt=\"tour.png\" />",
+            "        <div>Put your files here.</div>",
+            "    </el-tour-step>",
+            "    <el-tour-step :target=\"ref2?.$el\" title=\"Save\" description=\"Save your changes\" />",
+            "    <el-tour-step :target=\"ref3?.$el\" title=\"Other Actions\" description=\"Click to see other\" />",
+            "</el-tour>"
+        ],
+        "description": "Tour 漫游式引导"
+    },
+    "Tree 树形控件": {
+        "prefix": "<el-tree⚡",
+        "body": [
+            "<el-tree data=\"data\" :props=\"defaultProps\" @node-click=\"handleNodeClick\" />"
+        ],
+        "description": "Tree 树形控件"
+    },
+    "Tree V2 虚拟化树形控件": {
+        "prefix": "<el-tree-v2⚡",
+        "body": [
+            "<el-tree-v2 style=\"max-width: 600px\" :data=\"data\" :props=\"props\" :height=\"208\" />"
+        ],
+        "description": "Tree V2 虚拟化树形控件"
+    },
+    "Statistic 统计组件": {
+        "prefix": "<el-statistic⚡",
+        "body": [
+            "<el-statistic title=\"Daily active users\" :value=\"268500\" />"
+        ],
+        "description": "Statistic 统计组件"
+    },
+    "Segmented 分段控制器": {
+        "prefix": "<el-segmented⚡",
+        "body": [
+            "<el-segmented v-model=\"value\" :options=\"options\" size=\"default\" />"
+        ],
+        "description": "Segmented 分段控制器"
     },
 
     /**
      * Navigation 导航
      */
+    "Affix 固钉": {
+        "prefix": "<el-affix⚡",
+        "body": ["<el-affix :offset=\"120\">", "    <el-button type=\"primary\">Offset top 120px</el-button>", "</el-affix>"],
+        "description": "Affix 固钉"
+    },
+    "Anchor 锚点": {
+        "prefix": "<el-anchor⚡",
+        "body": [
+            "<el-anchor :offset=\"70\">",
+            "    <el-anchor-link :href=\"`#${locale['basic-usage']}`\"> {{ locale['Basic Usage'] }} </el-anchor-link>",
+            "    <el-anchor-link :href=\"`#${locale['scroll-container']}`\"> {{ locale['Scroll Container'] }} </el-anchor-link>",
+            "</el-anchor>"
+        ],
+        "description": "Anchor 锚点"
+    },
+    "Backtop 回到顶部": {
+        "prefix": "<el-backtop⚡",
+        "body": ["<el-backtop :right=\"100\" :bottom=\"100\" />"],
+        "description": "Backtop 回到顶部"
+    },
     "Breadcrumb 面包屑": {
         "prefix": "<el-breadcrumb⚡",
         "body": [
             "<el-breadcrumb separator=\"/\">",
             "    <el-breadcrumb-item :to=\"{ path: '/' }\">homepage</el-breadcrumb-item>",
-            "    <el-breadcrumb-item><a href=\"/\">promotion management</a></el-breadcrumb-item>",
+            "    <el-breadcrumb-item>",
+            "        <a href=\"/\">promotion management</a>",
+            "    </el-breadcrumb-item>",
             "    <el-breadcrumb-item>promotion list</el-breadcrumb-item>",
             "    <el-breadcrumb-item>promotion detail</el-breadcrumb-item>",
             "</el-breadcrumb>"
         ],
         "description": "Breadcrumb 面包屑"
     },
-
+    "Dropdown 下拉菜单": {
+        "prefix": "<el-dropdown⚡",
+        "body": [
+            "<el-dropdown>",
+            "    <span class=\"el-dropdown-link\">",
+            "        Dropdown List",
+            "        <el-icon class=\"el-icon--right\">",
+            "            <arrow-down />",
+            "        </el-icon>",
+            "    </span>",
+            "    <template #dropdown>",
+            "        <el-dropdown-menu>",
+            "            <el-dropdown-item>Action 1</el-dropdown-item>",
+            "            <el-dropdown-item>Action 2</el-dropdown-item>",
+            "            <el-dropdown-item>Action 3</el-dropdown-item>",
+            "            <el-dropdown-item disabled>Action 4</el-dropdown-item>",
+            "            <el-dropdown-item divided>Action 5</el-dropdown-item>",
+            "        </el-dropdown-menu>",
+            "    </template>",
+            "</el-dropdown>"
+        ],
+        "description": "Dropdown 下拉菜单"
+    },
+    "Menu 菜单": {
+        "prefix": "<el-menu⚡",
+        "body": [
+            "<el-menu :default-active=\"activeIndex\" class=\"el-menu-demo\" mode=\"horizontal\" @select=\"handleSelect\">",
+            "    <el-menu-item index=\"1\">Processing Center</el-menu-item>",
+            "    <el-sub-menu index=\"2\">",
+            "        <template #title>Workspace</template>",
+            "        <el-menu-item index=\"2-1\">item one</el-menu-item>",
+            "        <el-menu-item index=\"2-2\">item two</el-menu-item>",
+            "        <el-menu-item index=\"2-3\">item three</el-menu-item>",
+            "        <el-sub-menu index=\"2-4\">",
+            "            <template #title>item four</template>",
+            "            <el-menu-item index=\"2-4-1\">item one</el-menu-item>",
+            "            <el-menu-item index=\"2-4-2\">item two</el-menu-item>",
+            "            <el-menu-item index=\"2-4-3\">item three</el-menu-item>",
+            "        </el-sub-menu>",
+            "    </el-sub-menu>",
+            "    <el-menu-item index=\"3\" disabled>Info</el-menu-item>",
+            "    <el-menu-item index=\"4\">Orders</el-menu-item>",
+            "</el-menu>"
+        ],
+        "description": "Menu 菜单"
+    },
+    "Page Header 页头": {
+        "prefix": "<el-page-header⚡",
+        "body": [
+            "<el-page-header @back=\"onBack\">",
+            "    <template #breadcrumb>",
+            "        <el-breadcrumb separator=\"/\">",
+            "            <el-breadcrumb-item :to=\"{ path: './page-header.html' }\"> homepage </el-breadcrumb-item>",
+            "            <el-breadcrumb-item>",
+            "                <a href=\"./page-header.html\">route 1</a>",
+            "            </el-breadcrumb-item>",
+            "            <el-breadcrumb-item>route 2</el-breadcrumb-item>",
+            "        </el-breadcrumb>",
+            "    </template>",
+            "    <template #content>",
+            "        <div class=\"flex items-center\">",
+            "            <el-avatar :size=\"32\" src=\"https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png\" />",
+            "            <span> Title </span>",
+            "            <span style=\"color: var(--el-text-color-regular)\"> Sub title </span>",
+            "            <el-tag>Default</el-tag>",
+            "        </div>",
+            "    </template>",
+            "    <template #extra>",
+            "        <div class=\"flex items-center\">",
+            "            <el-button>Print</el-button>",
+            "            <el-button type=\"primary\">Edit</el-button>",
+            "        </div>",
+            "    </template>",
+            "</el-page-header>"
+        ],
+        "description": "Page Header 页头"
+    },
+    "Steps 步骤条": {
+        "prefix": "<el-steps⚡",
+        "body": [
+            "<el-steps :active=\"active\" finish-status=\"success\">",
+            "    <el-step title=\"Step 1\" />",
+            "    <el-step title=\"Step 2\" />",
+            "    <el-step title=\"Step 3\" />",
+            "</el-steps>"
+        ],
+        "description": "Steps 步骤条"
+    },
     "Tabs 标签页": {
         "prefix": "<el-tabs⚡",
         "body": [
-            "<el-tabs v-model=\"activeName\" class=\"demo-tabs\" @tab-click=\"handleClick\">",
+            "<el-tabs v-model=\"activeName\" @tab-click=\"handleClick\">",
             "    <el-tab-pane label=\"User\" name=\"first\">User</el-tab-pane>",
             "    <el-tab-pane label=\"Config\" name=\"second\">Config</el-tab-pane>",
             "    <el-tab-pane label=\"Role\" name=\"third\">Role</el-tab-pane>",
@@ -426,29 +650,78 @@
     /**
      * Feedback 反馈组件
      */
+    "Alert 提示": {
+        "prefix": "<el-alert⚡",
+        "body": ["<el-alert title=\"Success alert\" type=\"success\" />"],
+        "description": "Alert 提示"
+    },
     "Dialog 对话框": {
         "prefix": "<el-dialog⚡",
         "body": [
-            "<el-dialog v-model=\"${1:show}\" title=\"Shipping address\">",
-            "    <main>container</main>",
+            "<el-dialog v-model=\"dialogVisible\" title=\"Tips\" width=\"500\" :before-close=\"handleClose\">",
+            "    <span>This is a message</span>",
             "    <template #footer>",
-            "        <span class=\"dialog-footer\">",
-            "            <el-button @click=\"${1:show} = false\">Cancel</el-button>",
-            "            <el-button type=\"primary\" @click=\"${1:show} = false\"> Confirm </el-button>",
-            "        </span>",
+            "        <div class=\"dialog-footer\">",
+            "            <el-button @click=\"dialogVisible = false\">Cancel</el-button>",
+            "            <el-button type=\"primary\" @click=\"dialogVisible = false\"> Confirm </el-button>",
+            "        </div>",
             "    </template>",
             "</el-dialog>"
         ],
         "description": "Dialog 对话框"
     },
-
     "Drawer 抽屉": {
         "prefix": "<el-drawer⚡",
         "body": [
-            "<el-drawer v-model=\"${1:show}\" title=\"I have a nested table inside!\" direction=\"rtl\" size=\"50%\">",
-            "    <main>container</main>",
+            "<el-drawer v-model=\"drawer\" title=\"I am the title\" :direction=\"direction\" :before-close=\"handleClose\">",
+            "    <span>Hi, there!</span>",
             "</el-drawer>"
         ],
         "description": "Drawer 抽屉"
-    }
+    },
+    "Popconfirm 气泡确认框": {
+        "prefix": "<el-popconfirm⚡",
+        "body": [
+            "<el-popconfirm class=\"box-item\" title=\"Top Left prompts info\" placement=\"top-start\">",
+            "    <template #reference>",
+            "        <el-button>top-start</el-button>",
+            "    </template>",
+            "</el-popconfirm>"
+        ],
+        "description": "Popconfirm 气泡确认框"
+    },
+    "Popover 弹出框": {
+        "prefix": "<el-popover⚡",
+        "body": [
+            "<el-popover class=\"box-item\" title=\"Title\" content=\"Top Left prompts info\" placement=\"top-start\">",
+            "    <template #reference>",
+            "        <el-button>top-start</el-button>",
+            "    </template>",
+            "</el-popover>"
+        ],
+        "description": "Popover 弹出框"
+    },
+    "Tooltip 文字提示": {
+        "prefix": "<el-tooltip⚡",
+        "body": [
+            "<el-tooltip class=\"box-item\" effect=\"dark\" content=\"Top Left prompts info\" placement=\"top-start\">",
+            "    <el-button>top-start</el-button>",
+            "</el-tooltip>"
+        ],
+        "description": "Tooltip 文字提示"
+    },
+
+    /**
+     * Others 其他
+     */
+    "Divider 分割线": {
+        "prefix": "<el-divider⚡",
+        "body": ["<el-divider />"],
+        "description": "Divider 分割线"
+    },
+    "Watermark 水印": {
+        "prefix": "<el-watermark⚡",
+        "body": ["<el-watermark :font=\"font\">", "    <div style=\"height: 500px\" />", "</el-watermark>"],
+        "description": "Watermark 水印"
+    },
 }
