@@ -90,6 +90,11 @@ import ElPopconfirm from './components/el-popconfirm';
 import ElPopover from './components/el-popover';
 import ElTooltip from './components/el-tooltip';
 import ElDivider from './components/el-divider';
+import ElBacktop from './components/el-backtop';
+import ElDropdown from './components/el-dropdown';
+import ElInputTag from './components/el-input-tag';
+import ElAnchorLink from './components/el-anchor-link';
+import ElAnchor from './components/el-anchor';
 
 export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(
@@ -122,6 +127,7 @@ export function activate(context: vscode.ExtensionContext) {
                         ElFormItem,
                         ElForm,
                         ElInputNumber,
+                        ElInputTag,
                         ElInput,
                         ElMention,
                         ElRadioGroup,
@@ -172,8 +178,12 @@ export function activate(context: vscode.ExtensionContext) {
                         ElStatistic,
                         ElSegmented,
                         ElAffix,
+                        ElAnchorLink,
+                        ElAnchor,
+                        ElBacktop,
                         ElBreadcrumbItem,
                         ElBreadcrumb,
+                        ElDropdown,
                         ElMenuItemGroup,
                         ElSubMenu,
                         ElMenu,

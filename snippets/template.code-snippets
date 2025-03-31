@@ -172,6 +172,14 @@
         "description": "Input Number 数字输入框"
     },
 
+    "InputTag 标签输入框": {
+        "prefix": "<el-input-tag⚡",
+        "body": [
+            "<el-input-tag v-model=\"input\" placeholder=\"Please input\" aria-label=\"Please click the Enter key after input\" />"
+        ],
+        "description": "InputTag 标签输入框"
+    },
+
     
     "Mention 提及": {
         "prefix": "<el-mention⚡",
