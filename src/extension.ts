@@ -58,6 +58,20 @@ import ElImage from './components/el-image';
 import ElPagination from './components/el-pagination';
 import ElProgress from './components/el-progress';
 import ElResult from './components/el-result';
+import ElSkeletonItem from './components/el-skeleton-item';
+import ElSkeleton from './components/el-skeleton';
+import ElTableColumn from './components/el-table-column';
+import ElTable from './components/el-table';
+import ElTableV2 from './components/el-table-v2';
+import ElCheckTag from './components/el-check-tag';
+import ElTag from './components/el-tag';
+import ElTimelineItem from './components/el-timeline-item';
+import ElTour from './components/el-tour';
+import ElTourStep from './components/el-tour-step';
+import ElTree from './components/el-tree';
+import ElTreeV2 from './components/el-tree-v2';
+import ElStatistic from './components/el-statistic';
+import ElSegmented from './components/el-segmented';
 
 export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(
@@ -124,7 +138,21 @@ export function activate(context: vscode.ExtensionContext) {
                         ElImage,
                         ElPagination,
                         ElProgress,
-                        ElResult
+                        ElResult,
+                        ElSkeletonItem,
+                        ElSkeleton,
+                        ElTableV2,
+                        ElTableColumn,
+                        ElTable,
+                        ElCheckTag,
+                        ElTag,
+                        ElTimelineItem,
+                        ElTourStep,
+                        ElTour,
+                        ElTree,
+                        ElTreeV2,
+                        ElStatistic,
+                        ElSegmented
                     ];
 
                     /**
