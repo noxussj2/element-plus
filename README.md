@@ -30,19 +30,19 @@
 
 ✅ 例如在 `.vue` 文件中输入 `el-` 时就会出现一系列 `Element Plus` 组件的代码提示。
 
-<img src="./images/1.png">
+<img src="https://note.noxussj.top/element-plus/1.png">
 
 <br />
 
 ✅ 在组件中输入空格、或者手动触发属性提示
 
-<img src="./images/2.png">
+<img src="https://note.noxussj.top/element-plus/2.png">
 
 <br />
 
 ✅ 在组件中输入 `@` 触发事件提示
 
-<img src="./images/3.png">
+<img src="https://note.noxussj.top/element-plus/3.png">
 
 ## 📌 支持的组件
 

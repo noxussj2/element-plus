@@ -4,7 +4,7 @@
     "icon": "images/element-plus.png",
     "displayName": "Element Plus",
     "description": "Element Plus Snippets",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "engines": {
         "vscode": "^1.46.0"
     },
