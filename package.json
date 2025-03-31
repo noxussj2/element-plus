@@ -2,7 +2,7 @@
     "name": "element-plus",
     "displayName": "element-plus",
     "description": "",
-    "version": "0.0.1",
+    "version": "0.0.26",
     "engines": {
         "vscode": "^1.89.1"
     },
