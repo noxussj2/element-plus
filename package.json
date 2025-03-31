@@ -1,13 +1,15 @@
 {
     "name": "element-plus",
-    "displayName": "element-plus",
-    "description": "",
-    "version": "0.0.26",
+    "repository": "https://github.com/noxussj2/element-plus",
+    "icon": "images/element-plus.png",
+    "displayName": "Element Plus",
+    "description": "Element Plus Snippets",
+    "version": "2.0.1",
     "engines": {
-        "vscode": "^1.89.1"
+        "vscode": "^1.46.0"
     },
     "categories": [
-        "Other"
+        "Snippets"
     ],
     "activationEvents": [
         "onCommand:extension.helloWorld",
@@ -70,5 +72,7 @@
     },
     "dependencies": {
         "vscode-html-languageservice": "^5.3.1"
-    }
+    },
+    "publisher": "noxussj",
+    "license": "MIT"
 }
