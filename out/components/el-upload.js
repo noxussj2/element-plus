@@ -70,55 +70,55 @@ const attr = [
     {
         key: 'on-preview',
         describe: '点击文件列表中已上传的文件时的钩子。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: 'on-remove',
         describe: '文件列表移除文件时的钩子。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: 'on-success',
         describe: '文件上传成功时的钩子。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: 'on-error',
         describe: '文件上传失败时的钩子。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: 'on-progress',
         describe: '文件上传时的钩子。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: 'on-change',
         describe: '文件状态改变时的钩子，添加文件、上传成功和上传失败时都会被调用。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: 'on-exceed',
         describe: '当超出限制时，执行的钩子函数。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: 'before-upload',
         describe: '上传文件之前的钩子，参数为上传的文件，若返回 false 或者返回 Promise 且被 reject，则停止上传。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: 'before-remove',
         describe: '删除文件之前的钩子，参数为上传的文件和文件列表，若返回 false 或者返回 Promise 且被 reject，则停止删除。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -148,7 +148,7 @@ const attr = [
     {
         key: 'http-request',
         describe: '覆盖默认的 Xhr 行为，允许自行实现上传文件的请求。',
-        type: 'Function',
+        type: 'function',
         default: '请参考 ajaxUpload'
     },
     {

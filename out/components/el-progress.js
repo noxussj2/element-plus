@@ -70,7 +70,7 @@ const attr = [
     {
         key: 'format',
         describe: '指定进度条文字内容。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {

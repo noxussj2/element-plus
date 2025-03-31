@@ -119,17 +119,17 @@ const event = [
     {
         key: '@change',
         describe: '绑定值被改变时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@blur',
         describe: '在组件 Input 失去焦点时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@focus',
         describe: '在组件 Input 获得焦点时触发',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

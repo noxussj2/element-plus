@@ -82,7 +82,7 @@ const attr = [
     {
         key: 'filter-method',
         describe: '自定义搜索逻辑，第一个参数是 node，第二个参数是 keyword，返回的布尔值表示是否保留该选项',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -94,7 +94,7 @@ const attr = [
     {
         key: 'before-filter',
         describe: '过滤函数调用前，所要调用的钩子函数，该函数接收要过滤的值作为参数。如果该函数的返回值是 false 或者是一个被拒绝的 Promise，那么接下来的过滤逻辑便不会执行。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -174,37 +174,37 @@ const event = [
     {
         key: '@change',
         describe: '当绑定值变化时触发的事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@expand-change',
         describe: '当展开节点发生变化时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@blur',
         describe: '当失去焦点时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@focus',
         describe: '当获得焦点时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@clear',
         describe: '可清空的单选模式下用户点击清空按钮时触发，版本 2.7.7 后新增',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@visible-change',
         describe: '下拉框出现/隐藏时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@remove-tag',
         describe: '在多选模式下，移除Tag时触发',
-        type: 'Function'
+        type: 'function'
     }
 ];
 attr.forEach((x) => {

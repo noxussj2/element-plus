@@ -84,7 +84,7 @@ const event = [
     {
         key: '@change',
         describe: '当前展示的幻灯片切换时触发，它有两个参数， 一个是新幻灯片的索引，另一个是旧幻灯片的索引',
-        type: 'Function'
+        type: 'function'
     }
 ];
 attr.forEach((x) => {

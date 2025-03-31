@@ -53,12 +53,12 @@ const event: any = [
     {
         key: '@click',
         describe: '点击 Tag 时触发的事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@close',
         describe: '关闭 Tag 时触发的事件',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

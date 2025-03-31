@@ -83,7 +83,7 @@ const event: any = [
     {
         key: '@close',
         describe: '关闭引导时的回调函数',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

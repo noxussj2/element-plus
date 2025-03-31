@@ -156,7 +156,7 @@ const event = [
     {
         key: '@change',
         describe: 'switch 状态发生变化时的回调函数',
-        type: 'Function',
+        type: 'function',
         default: '—'
     }
 ];

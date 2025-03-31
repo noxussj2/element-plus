@@ -148,7 +148,7 @@ const attr = [
     {
         key: 'disabled-date',
         describe: '一个用来判断该日期是否被禁用的函数，接受一个 Date 对象作为参数。应该返回一个 Boolean 值。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -160,7 +160,7 @@ const attr = [
     {
         key: 'cell-class-name',
         describe: '设置自定义类名',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -198,37 +198,37 @@ const event = [
     {
         key: '@change',
         describe: '用户确认选定的值时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@blur',
         describe: '在组件 Input 失去焦点时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@focus',
         describe: '在组件 Input 获得焦点时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@clear',
         describe: '可清空的模式下用户点击清空按钮时触发（2.7.7 新增）',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@calendar-change',
         describe: '在日历所选日期更改时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@panel-change',
         describe: '当日期面板改变时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@visible-change',
         describe: '当 DatePicker 的下拉列表出现/消失时触发',
-        type: 'Function'
+        type: 'function'
     }
 ];
 attr.forEach((x) => {

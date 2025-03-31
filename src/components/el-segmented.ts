@@ -71,7 +71,7 @@ const event: any = [
     {
         key: '@change',
         describe: '当所选值更改时触发，参数是当前选中的值',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

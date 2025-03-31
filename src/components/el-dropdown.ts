@@ -113,17 +113,17 @@ const event: any = [
     {
         key: '@click',
         describe: 'split-button 为 true 时，点击左侧按钮的回调。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@command',
         describe: '当下拉项被点击时触发，参数是从下拉菜单中发送的命令。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@visible-change',
         describe: '当下拉菜单出现/消失时触发器，当它出现时，参数将是 true，否则将是 false。',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

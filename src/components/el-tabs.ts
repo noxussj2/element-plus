@@ -50,7 +50,7 @@ const attr = [
     {
         key: 'before-leave',
         describe: '切换标签之前的钩子函数， 若返回 false  或者返回被 reject 的 Promise，则阻止切换。',
-        type: 'Function',
+        type: 'function',
         default: '() => true'
     }
 ];
@@ -59,31 +59,31 @@ const event: any = [
     {
         key: '@tab-click',
         describe: 'tab 被选中时触发',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: '@tab-change',
         describe: 'activeName 改变时触发',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: '@tab-remove',
         describe: '点击 tab 移除按钮时触发',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: '@tab-add',
         describe: '点击 tab 新增按钮时触发',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: '@edit',
         describe: '点击 tab 的新增或移除按钮后触发',
-        type: 'Function',
+        type: 'function',
         default: '—'
     }
 ];

@@ -114,27 +114,27 @@ const event = [
     {
         key: '@load',
         describe: '图片加载成功时触发。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@error',
         describe: '图片加载失败时触发。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@switch',
         describe: '切换图像时触发。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@close',
         describe: '当点击 X 按钮或者在 hide-on-click-modal 为 true 时点击遮罩层时触发。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@show',
         describe: '当 Viewer 显示时触发。',
-        type: 'Function'
+        type: 'function'
     }
 ];
 attr.forEach((x) => {

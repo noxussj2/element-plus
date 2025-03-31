@@ -126,22 +126,22 @@ const event = [
     {
         key: '@change',
         describe: '用户确认选定的值时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@blur',
         describe: '在组件 Input 失去焦点时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@focus',
         describe: '在组件 Input 获得焦点时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@clear',
         describe: '可清空的单选模式下用户点击清空按钮时触发 (v2.7.7及以上)',
-        type: 'Function'
+        type: 'function'
     }
 ];
 attr.forEach((x) => {

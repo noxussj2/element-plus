@@ -90,22 +90,22 @@ const event = [
     {
         key: 'change',
         describe: '当绑定值变化时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: 'active-change',
         describe: '面板中当前显示的颜色发生改变时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: 'focus',
         describe: '当获得焦点时触发（2.4.0 新增）',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: 'blur',
         describe: '当失去焦点时触发（2.4.0 新增）',
-        type: 'Function'
+        type: 'function'
     }
 ];
 attr.forEach((x) => {

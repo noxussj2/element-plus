@@ -29,7 +29,7 @@ const event: any = [
     {
         key: '@click',
         describe: '点击按钮触发的事件。',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

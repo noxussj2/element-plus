@@ -110,7 +110,7 @@ const attr = [
     {
         key: 'filter-method',
         describe: '自定义筛选方法',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -212,7 +212,7 @@ const attr = [
     {
         key: 'remote-method',
         describe: '当输入值发生变化时触发的函数。它的参数就是当前的输入值。当 filterable 设置为 true 时才会生效',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -305,37 +305,37 @@ const event = [
     {
         key: '@change',
         describe: '当所选值更改时触发，参数是当前选中的值',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: '@visible-change',
         describe: '当下拉菜单出现/消失时触发器, 当它出现时, 参数将是 true, 否则将是 false',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: '@remove-tag',
         describe: '当一个标签在多个模式下被移除时触发，参数将被移除标签值',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: '@clear',
         describe: '可清空的单选模式下用户点击清空按钮时触发',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: '@blur',
         describe: '当选择器的输入框失去焦点时触发',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: '@focus',
         describe: '当选择器的输入框获得焦点时触发',
-        type: 'Function',
+        type: 'function',
         default: '—'
     }
 ];

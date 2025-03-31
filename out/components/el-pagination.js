@@ -144,27 +144,27 @@ const event = [
     {
         key: '@size-change',
         describe: 'page-size 改变时触发。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@current-change',
         describe: 'current-page 改变时触发。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@change',
         describe: 'current-page 或 page-size 更改时触发。版本 2.4.4+。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@prev-click',
         describe: '用户点击上一页按钮改变当前页时触发。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@next-click',
         describe: '用户点击下一页按钮改变当前页时触发。',
-        type: 'Function'
+        type: 'function'
     }
 ];
 attr.forEach((x) => {

@@ -95,17 +95,17 @@ const event: any = [
     {
         key: '@close',
         describe: '关闭引导时的回调函数',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@finish',
         describe: '引导完成时的回调',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@change',
         describe: '步骤改变时的回调',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

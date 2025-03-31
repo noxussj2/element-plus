@@ -72,17 +72,17 @@ const event = [
     {
         key: '@close',
         describe: '当点击 X 按钮或者在 hide-on-click-modal 为 true 时点击遮罩层时触发。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@switch',
         describe: '切换图像时触发。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@rotate',
         describe: '旋转图像时触发。版本 2.3.13+。',
-        type: 'Function'
+        type: 'function'
     }
 ];
 attr.forEach((x) => {

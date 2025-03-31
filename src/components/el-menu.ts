@@ -125,17 +125,17 @@ const event: any = [
     {
         key: '@select',
         describe: '菜单激活回调。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@open',
         describe: 'sub-menu 展开的回调。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@close',
         describe: 'sub-menu 收起的回调。',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

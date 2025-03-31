@@ -205,10 +205,31 @@ export function activate(context: vscode.ExtensionContext) {
                             const key = isEvent ? item.key.replace('@', '') : item.key;
                             const instance = new vscode.CompletionItem(`${item.key}⚡`, vscode.CompletionItemKind.Property);
 
-                            // 如果不是 string 类型，则补上 v-bind 即 : 前缀
-                            const insertText = item.type === 'string' || item.type === 'Function' || item.type === 'enum' ? key : `:${key}`;
-                            instance.insertText = new vscode.SnippetString(insertText + '="${1:value}"');
+                            let insertText = '';
 
+                            // 如果是事件，不需要补前缀
+                            if (isEvent) {
+                                insertText = key;
+                            }
+
+                            // 如果是属性，则要判断补前缀
+                            if (!isEvent) {
+                                if (String(item.type).startsWith('string')) {
+                                    insertText = key;
+                                }
+
+                                // 字符串以外，都视为 v-bind
+                                if (String(item.type).startsWith('string') === false) {
+                                    insertText = ':' + key;
+                                }
+
+                                // 如果是 v-model 不需要补
+                                if (item.key === 'v-model') {
+                                    insertText = key;
+                                }
+                            }
+
+                            instance.insertText = new vscode.SnippetString(insertText + '="${1:value}"');
                             instance.sortText = String(index);
                             instance.documentation = new vscode.MarkdownString(markdownString(item));
                             return instance;

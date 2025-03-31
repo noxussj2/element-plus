@@ -29,7 +29,7 @@ const event: any = [
     {
         key: '@back',
         describe: '点击左侧区域触发',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

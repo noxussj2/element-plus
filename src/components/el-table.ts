@@ -164,7 +164,7 @@ const attr = [
     {
         key: 'tooltip-formatter',
         describe: '自定义 show-overflow-tooltip 的 tooltip 内容 (2.9.4 版本新增)',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -179,97 +179,97 @@ const event: any = [
     {
         key: '@select',
         describe: '当用户手动勾选数据行的 Checkbox 时触发的事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@select-all',
         describe: '当用户手动勾选全选 Checkbox 时触发的事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@selection-change',
         describe: '当选择项发生变化时会触发该事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@cell-mouse-enter',
         describe: '当单元格 hover 进入时会触发该事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@cell-mouse-leave',
         describe: '当单元格 hover 退出时会触发该事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@cell-click',
         describe: '当某个单元格被点击时会触发该事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@cell-dblclick',
         describe: '当某个单元格被双击时会触发该事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@cell-contextmenu',
         describe: '当某个单元格被鼠标右键点击时会触发该事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@row-click',
         describe: '当某一行被点击时会触发该事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@row-contextmenu',
         describe: '当某一行被鼠标右键点击时会触发该事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@row-dblclick',
         describe: '当某一行被双击时会触发该事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@header-click',
         describe: '当某一列的表头被点击时会触发该事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@header-contextmenu',
         describe: '当某一列的表头被鼠标右键点击时触发该事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@sort-change',
         describe: '当表格的排序条件发生变化的时候会触发该事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@filter-change',
         describe: 'column 的 key， 如果需要使用 filter-change 事件，则需要此属性标识是哪个 column 的筛选条件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@current-change',
         describe: '当表格的当前行发生变化的时候会触发该事件，如果要高亮当前行，请打开表格的 highlight-current-row 属性',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@header-dragend',
         describe: '当拖动表头改变了列的宽度的时候会触发该事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@expand-change',
         describe: '当用户对某一行展开或者关闭的时候会触发该事件（展开行时，回调的第二个参数为 expandedRows；树形表格时第二参数为 expanded）',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@scroll',
         describe: '当表格被用户滚动后触发（2.9.0+）',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

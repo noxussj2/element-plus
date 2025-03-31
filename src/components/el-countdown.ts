@@ -14,7 +14,7 @@ const attr = [
     {
         key: 'formatter',
         describe: '自定义数字格式化。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -59,12 +59,12 @@ const event: any = [
     {
         key: '@change',
         describe: '时间差改变事件',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@finish',
         describe: '倒计时结束事件',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

@@ -77,12 +77,12 @@ const event: any = [
     {
         key: '@confirm',
         describe: '点击确认按钮时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@cancel',
         describe: '点击取消按钮时触发',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

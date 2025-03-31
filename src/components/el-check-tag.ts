@@ -29,7 +29,7 @@ const event: any = [
     {
         key: '@change',
         describe: '点击 Check Tag 时触发的事件',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

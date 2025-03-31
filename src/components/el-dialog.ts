@@ -116,7 +116,7 @@ const attr = [
     {
         key: 'before-close',
         describe: '关闭前的回调，会暂停 Dialog 的关闭. 回调函数内执行 done 参数方法的时候才是真正关闭对话框的时候.',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -179,32 +179,32 @@ const event: any = [
     {
         key: '@open',
         describe: 'Dialog 打开的回调',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@opened',
         describe: 'Dialog 打开动画结束时的回调',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@close',
         describe: 'Dialog 关闭的回调',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@closed',
         describe: 'Dialog 关闭动画结束时的回调',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@open-auto-focus',
         describe: '输入焦点聚焦在 Dialog 内容时的回调',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@close-auto-focus',
         describe: '输入焦点从 Dialog 内容失焦时的回调',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

@@ -54,7 +54,7 @@ const event = [
     {
         key: '@change',
         describe: '绑定值变化时触发的事件',
-        type: 'Function'
+        type: 'function'
     }
 ];
 attr.forEach((x) => {

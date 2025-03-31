@@ -144,7 +144,7 @@ const event = [
     {
         key: '@change',
         describe: '分值改变时触发',
-        type: 'Function'
+        type: 'function'
     }
 ];
 attr.forEach((x) => {

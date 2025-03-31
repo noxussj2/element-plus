@@ -143,32 +143,32 @@ const event: any = [
     {
         key: '@show',
         describe: '显示时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@before-enter',
         describe: '显示动画播放前触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@after-enter',
         describe: '显示动画播放完毕后触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@hide',
         describe: '隐藏时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@before-leave',
         describe: '隐藏动画播放前触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@after-leave',
         describe: '隐藏动画播放完毕后触发',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

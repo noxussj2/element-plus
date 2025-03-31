@@ -52,7 +52,7 @@ const attr = [
     {
         key: 'check-is-whole',
         describe: '当退格键被按下做删除操作时，检查是否将提及部分作为整体删除',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -90,12 +90,12 @@ const event = [
     {
         key: '@search',
         describe: '按下触发字段时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@select',
         describe: '当用户选择选项时触发',
-        type: 'Function'
+        type: 'function'
     }
 ];
 attr.forEach((x) => {

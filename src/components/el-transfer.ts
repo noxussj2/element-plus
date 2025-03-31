@@ -32,7 +32,7 @@ const attr = [
     {
         key: 'filter-method',
         describe: '自定义搜索方法',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -95,17 +95,17 @@ const event = [
     {
         key: '@change',
         describe: '右侧列表元素变化时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@left-check-change',
         describe: '左侧列表元素被用户选中 / 取消选中时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@right-check-change',
         describe: '右侧列表元素被用户选中 / 取消选中时触发',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

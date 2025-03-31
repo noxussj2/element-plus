@@ -136,19 +136,19 @@ const attr = [
     {
         key: 'disabled-hours',
         describe: '禁止选择部分小时选项',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: 'disabled-minutes',
         describe: '禁止选择部分分钟选项',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: 'disabled-seconds',
         describe: '禁止选择部分秒选项',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -186,27 +186,27 @@ const event = [
     {
         key: '@change',
         describe: '用户确认选定的值时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@blur',
         describe: '在组件 Input 失去焦点时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@focus',
         describe: '在组件 Input 获得焦点时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@clear',
         describe: '可清空的模式下用户点击清空按钮时触发 (v2.7.7及以上)',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@visible-change',
         describe: '当 TimePicker 的下拉列表出现/消失时触发',
-        type: 'Function'
+        type: 'function'
     }
 ];
 attr.forEach((x) => {

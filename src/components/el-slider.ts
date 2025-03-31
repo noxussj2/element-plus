@@ -74,7 +74,7 @@ const attr = [
     {
         key: 'format-tooltip',
         describe: '格式化提示信息',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -116,7 +116,7 @@ const attr = [
     {
         key: 'format-value-text',
         describe: '显示屏幕阅读器的 aria-valuenow 属性的格式',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -168,13 +168,13 @@ const event = [
     {
         key: '@change',
         describe: '值改变时触发（使用鼠标拖曳时，只在松开鼠标后触发）',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: '@input',
         describe: '数据改变时触发（使用鼠标拖曳时，活动过程实时触发）',
-        type: 'Function',
+        type: 'function',
         default: '—'
     }
 ];

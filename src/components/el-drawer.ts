@@ -32,7 +32,7 @@ const attr = [
     {
         key: 'before-close',
         describe: '关闭前的回调，会暂停 Drawer 的关闭',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -149,32 +149,32 @@ const event: any = [
     {
         key: '@open',
         describe: 'Drawer 打开的回调',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@opened',
         describe: 'Drawer 打开动画结束时的回调',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@close',
         describe: 'Drawer 关闭的回调',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@closed',
         describe: 'Drawer 关闭动画结束时的回调',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@open-auto-focus',
         describe: '输入焦点聚焦在 Drawer 内容时的回调',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@close-auto-focus',
         describe: '输入焦点从 Drawer 内容失焦时的回调',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

@@ -120,32 +120,32 @@ const event = [
     {
         key: '@blur',
         describe: '当选择器的输入框失去焦点时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@focus',
         describe: '当选择器的输入框获得焦点时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@input',
         describe: '在 Input 值改变时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@clear',
         describe: '在点击由 clearable 属性生成的清空按钮时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@select',
         describe: '点击选中建议项时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@change',
         describe: '在 Input 值改变时触发',
-        type: 'Function'
+        type: 'function'
     }
 ];
 attr.forEach((x) => {

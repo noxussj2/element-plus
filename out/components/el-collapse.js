@@ -24,7 +24,7 @@ const event = [
     {
         key: '@change',
         describe: '切换当前活动面板，在手风琴模式下其类型是string，在其他模式下是array',
-        type: 'Function'
+        type: 'function'
     }
 ];
 attr.forEach((x) => {

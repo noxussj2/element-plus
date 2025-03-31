@@ -29,12 +29,12 @@ const event: any = [
     {
         key: '@change',
         describe: '固钉状态改变时触发的事件。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@scroll',
         describe: '滚动时触发的事件。',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

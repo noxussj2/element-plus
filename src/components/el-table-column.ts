@@ -50,7 +50,7 @@ const attr = [
     {
         key: 'render-header',
         describe: '列标题 Label 区域渲染使用的 Function',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -62,7 +62,7 @@ const attr = [
     {
         key: 'sort-method',
         describe: '指定数据排序的方法，仅当 sortable=true 时有效，应如同 Array.sort 返回一个 Number',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -86,7 +86,7 @@ const attr = [
     {
         key: 'formatter',
         describe: '用来格式化内容',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -122,7 +122,7 @@ const attr = [
     {
         key: 'selectable',
         describe: '仅对 type=selection 的列有效，类型为 Function，返回值用来决定这一行的 CheckBox 是否可以勾选',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -158,7 +158,7 @@ const attr = [
     {
         key: 'filter-method',
         describe: '数据过滤使用的方法。如果是多选的筛选项，对每一条数据会执行多次，任意一次返回 true 就会显示',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -170,7 +170,7 @@ const attr = [
     {
         key: 'tooltip-formatter',
         describe: '使用 show-overflow-tooltip 时自定义 tooltip 内容（从 2.9.4 版本开始支持）',
-        type: 'Function',
+        type: 'function',
         default: '—'
     }
 ];

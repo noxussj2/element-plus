@@ -53,7 +53,7 @@ const event: any = [
     {
         key: '@close',
         describe: '关闭 Alert 时触发的事件',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

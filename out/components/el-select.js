@@ -100,7 +100,7 @@ const attr = [
     {
         key: 'filter-method',
         describe: '自定义筛选方法。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -112,7 +112,7 @@ const attr = [
     {
         key: 'remote-method',
         describe: '自定义远程搜索方法。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -294,37 +294,37 @@ const event = [
     {
         key: '@change',
         describe: '选中值发生变化时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@visible-change',
         describe: '下拉框出现/隐藏时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@remove-tag',
         describe: '多选模式下移除tag时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@clear',
         describe: '可清空的单选模式下用户点击清空按钮时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@blur',
         describe: '当 input 失去焦点时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@focus',
         describe: '当 input 获得焦点时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@popup-scroll',
         describe: '下拉滚动时触发（版本 2.9.4）',
-        type: 'Function'
+        type: 'function'
     }
 ];
 attr.forEach((x) => {

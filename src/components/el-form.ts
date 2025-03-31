@@ -101,7 +101,7 @@ const event = [
     {
         key: '@validate',
         describe: '任一表单项被校验后触发',
-        type: 'Function'
+        type: 'function'
     }
 ];
 

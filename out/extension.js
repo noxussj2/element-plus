@@ -96,6 +96,38 @@ const el_image_1 = __importDefault(require("./components/el-image"));
 const el_pagination_1 = __importDefault(require("./components/el-pagination"));
 const el_progress_1 = __importDefault(require("./components/el-progress"));
 const el_result_1 = __importDefault(require("./components/el-result"));
+const el_skeleton_item_1 = __importDefault(require("./components/el-skeleton-item"));
+const el_skeleton_1 = __importDefault(require("./components/el-skeleton"));
+const el_table_column_1 = __importDefault(require("./components/el-table-column"));
+const el_table_1 = __importDefault(require("./components/el-table"));
+const el_table_v2_1 = __importDefault(require("./components/el-table-v2"));
+const el_check_tag_1 = __importDefault(require("./components/el-check-tag"));
+const el_tag_1 = __importDefault(require("./components/el-tag"));
+const el_timeline_item_1 = __importDefault(require("./components/el-timeline-item"));
+const el_tour_1 = __importDefault(require("./components/el-tour"));
+const el_tour_step_1 = __importDefault(require("./components/el-tour-step"));
+const el_tree_1 = __importDefault(require("./components/el-tree"));
+const el_tree_v2_1 = __importDefault(require("./components/el-tree-v2"));
+const el_statistic_1 = __importDefault(require("./components/el-statistic"));
+const el_segmented_1 = __importDefault(require("./components/el-segmented"));
+const el_affix_1 = __importDefault(require("./components/el-affix"));
+const el_breadcrumb_item_1 = __importDefault(require("./components/el-breadcrumb-item"));
+const el_breadcrumb_1 = __importDefault(require("./components/el-breadcrumb"));
+const el_menu_item_group_1 = __importDefault(require("./components/el-menu-item-group"));
+const el_sub_menu_1 = __importDefault(require("./components/el-sub-menu"));
+const el_menu_1 = __importDefault(require("./components/el-menu"));
+const el_page_header_1 = __importDefault(require("./components/el-page-header"));
+const el_step_1 = __importDefault(require("./components/el-step"));
+const el_steps_1 = __importDefault(require("./components/el-steps"));
+const el_tab_pane_1 = __importDefault(require("./components/el-tab-pane"));
+const el_tabs_1 = __importDefault(require("./components/el-tabs"));
+const el_alert_1 = __importDefault(require("./components/el-alert"));
+const el_dialog_1 = __importDefault(require("./components/el-dialog"));
+const el_drawer_1 = __importDefault(require("./components/el-drawer"));
+const el_popconfirm_1 = __importDefault(require("./components/el-popconfirm"));
+const el_popover_1 = __importDefault(require("./components/el-popover"));
+const el_tooltip_1 = __importDefault(require("./components/el-tooltip"));
+const el_divider_1 = __importDefault(require("./components/el-divider"));
 function activate(context) {
     context.subscriptions.push(vscode.languages.registerCompletionItemProvider('html', {
         provideCompletionItems(document, position) {
@@ -158,7 +190,39 @@ function activate(context) {
                 el_image_1.default,
                 el_pagination_1.default,
                 el_progress_1.default,
-                el_result_1.default
+                el_result_1.default,
+                el_skeleton_item_1.default,
+                el_skeleton_1.default,
+                el_table_v2_1.default,
+                el_table_column_1.default,
+                el_table_1.default,
+                el_check_tag_1.default,
+                el_tag_1.default,
+                el_timeline_item_1.default,
+                el_tour_step_1.default,
+                el_tour_1.default,
+                el_tree_1.default,
+                el_tree_v2_1.default,
+                el_statistic_1.default,
+                el_segmented_1.default,
+                el_affix_1.default,
+                el_breadcrumb_item_1.default,
+                el_breadcrumb_1.default,
+                el_menu_item_group_1.default,
+                el_sub_menu_1.default,
+                el_menu_1.default,
+                el_page_header_1.default,
+                el_steps_1.default,
+                el_step_1.default,
+                el_tab_pane_1.default,
+                el_tabs_1.default,
+                el_alert_1.default,
+                el_dialog_1.default,
+                el_drawer_1.default,
+                el_popconfirm_1.default,
+                el_popover_1.default,
+                el_tooltip_1.default,
+                el_divider_1.default
             ];
             /**
              * 提取行前缀
@@ -172,8 +236,25 @@ function activate(context) {
                 const res = data.map((item, index) => {
                     const key = isEvent ? item.key.replace('@', '') : item.key;
                     const instance = new vscode.CompletionItem(`${item.key}⚡`, vscode.CompletionItemKind.Property);
-                    // 如果不是 string 类型，则补上 v-bind 即 : 前缀
-                    const insertText = item.type === 'string' || item.type === 'Function' || item.type === 'enum' ? key : `:${key}`;
+                    let insertText = '';
+                    // 如果是事件，不需要补前缀
+                    if (isEvent) {
+                        insertText = key;
+                    }
+                    // 如果是属性，则要判断补前缀
+                    if (!isEvent) {
+                        if (String(item.type).startsWith('string')) {
+                            insertText = key;
+                        }
+                        // 字符串以外，都视为 v-bind
+                        if (String(item.type).startsWith('string') === false) {
+                            insertText = ':' + key;
+                        }
+                        // 如果是 v-model 不需要补
+                        if (item.key === 'v-model') {
+                            insertText = key;
+                        }
+                    }
                     instance.insertText = new vscode.SnippetString(insertText + '="${1:value}"');
                     instance.sortText = String(index);
                     instance.documentation = new vscode.MarkdownString((0, template_1.markdownString)(item));

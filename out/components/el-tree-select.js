@@ -100,7 +100,7 @@ const attr = [
     {
         key: 'filter-method',
         describe: '自定义筛选方法。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -112,7 +112,7 @@ const attr = [
     {
         key: 'remote-method',
         describe: '自定义远程搜索方法。',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -328,13 +328,13 @@ const attr = [
     {
         key: 'load',
         describe: '加载子树数据的方法，仅当 lazy 属性为 true 时生效',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: 'render-content',
         describe: '树节点的内容区的渲染 Function',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -406,7 +406,7 @@ const attr = [
     {
         key: 'filter-node-method',
         describe: '对树节点进行筛选时执行的方法， 返回 false 则表示这个节点会被隐藏',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
@@ -442,13 +442,13 @@ const attr = [
     {
         key: 'allow-drag',
         describe: '判断节点能否被拖拽 如果返回 false ，节点不能被拖动',
-        type: 'Function',
+        type: 'function',
         default: '—'
     },
     {
         key: 'allow-drop',
         describe: "拖拽时判定目标节点能否成为拖动目标位置。 如果返回 false ，拖动节点不能被拖放到目标节点。 type 参数有三种情况：'prev'、'inner' 和 'next'，分别表示放置在目标节点前、插入至目标节点和放置在目标节点后",
-        type: 'Function',
+        type: 'function',
         default: '—'
     }
 ];
@@ -456,102 +456,102 @@ const event = [
     {
         key: '@change',
         describe: '选中值发生变化时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@visible-change',
         describe: '下拉框出现/隐藏时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@remove-tag',
         describe: '多选模式下移除tag时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@clear',
         describe: '可清空的单选模式下用户点击清空按钮时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@blur',
         describe: '当 input 失去焦点时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@focus',
         describe: '当 input 获得焦点时触发',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@popup-scroll',
         describe: '下拉滚动时触发（版本 2.9.4）',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@node-click',
         describe: '当节点被点击的时候触发。回调参数：四个参数：对应于节点点击的节点对象，TreeNode 的 node 属性, TreeNode 和事件对象。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@node-contextmenu',
         describe: '当某一节点被鼠标右键点击时会触发该事件。回调参数：共四个参数，依次为：event、传递给 data 属性的数组中该节点所对应的对象、节点对应的 Node、节点组件本身。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@check-change',
         describe: '当复选框被点击的时候触发。回调参数：共三个参数，依次为：传递给 data 属性的数组中该节点所对应的对象、节点本身是否被选中、节点的子树中是否有被选中的节点。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@check',
         describe: '点击节点复选框之后触发。回调参数：共两个参数，依次为：传递给 data 属性的数组中该节点所对应的对象、树目前的选中状态对象，包含 checkedNodes、checkedKeys、halfCheckedNodes、halfCheckedKeys 四个属性。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@current-change',
         describe: '当前选中节点变化时触发的事件。回调参数：共两个参数，依次为：当前节点的数据，当前节点的 Node 对象。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@node-expand',
         describe: '节点被展开时触发的事件。回调参数：共三个参数，依次为：传递给 data 属性的数组中该节点所对应的对象、节点对应的 Node、节点组件本身。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@node-collapse',
         describe: '节点被关闭时触发的事件。回调参数：共三个参数，依次为：传递给 data 属性的数组中该节点所对应的对象、节点对应的 Node、节点组件本身。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@node-drag-start',
         describe: '节点开始拖拽时触发的事件。回调参数：共两个参数，依次为：被拖拽节点对应的 Node、event。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@node-drag-enter',
         describe: '拖拽进入其他节点时触发的事件。回调参数：共三个参数，依次为：被拖拽节点对应的 Node、所进入节点对应的 Node、event。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@node-drag-leave',
         describe: '拖拽离开某个节点时触发的事件。回调参数：共三个参数，依次为：被拖拽节点对应的 Node、所离开节点对应的 Node、event。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@node-drag-over',
         describe: '在拖拽节点时触发的事件（类似浏览器的 mouseover 事件）。回调参数：共三个参数，依次为：被拖拽节点对应的 Node、当前进入节点对应的 Node、event。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@node-drag-end',
         describe: '拖拽结束时（可能未成功）触发的事件。回调参数：共四个参数，依次为：被拖拽节点对应的 Node、结束拖拽时最后进入的节点（可能为空）、被拖拽节点的放置位置（before、after、inner）、event。',
-        type: 'Function'
+        type: 'function'
     },
     {
         key: '@node-drop',
         describe: '拖拽成功完成时触发的事件。回调参数：共四个参数，依次为：被拖拽节点对应的 Node、结束拖拽时最后进入的节点、被拖拽节点的放置位置（before、after、inner）、event。',
-        type: 'Function'
+        type: 'function'
     }
 ];
 attr.forEach((x) => {
