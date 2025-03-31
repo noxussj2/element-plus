@@ -72,6 +72,17 @@ import ElTree from './components/el-tree';
 import ElTreeV2 from './components/el-tree-v2';
 import ElStatistic from './components/el-statistic';
 import ElSegmented from './components/el-segmented';
+import ElAffix from './components/el-affix';
+import ElBreadcrumbItem from './components/el-breadcrumb-item';
+import ElBreadcrumb from './components/el-breadcrumb';
+import ElMenuItemGroup from './components/el-menu-item-group';
+import ElSubMenu from './components/el-sub-menu';
+import ElMenu from './components/el-menu';
+import ElPageHeader from './components/el-page-header';
+import ElStep from './components/el-step';
+import ElSteps from './components/el-steps';
+import ElTabPane from './components/el-tab-pane';
+import ElTabs from './components/el-tabs';
 
 export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(
@@ -152,7 +163,18 @@ export function activate(context: vscode.ExtensionContext) {
                         ElTree,
                         ElTreeV2,
                         ElStatistic,
-                        ElSegmented
+                        ElSegmented,
+                        ElAffix,
+                        ElBreadcrumbItem,
+                        ElBreadcrumb,
+                        ElMenuItemGroup,
+                        ElSubMenu,
+                        ElMenu,
+                        ElPageHeader,
+                        ElSteps,
+                        ElStep,
+                        ElTabPane,
+                        ElTabs
                     ];
 
                     /**
