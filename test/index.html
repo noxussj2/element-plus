@@ -1,9 +1,3 @@
-<el-dialog v-model="value" title="Tips" width="500" :before-close="handleClose">
-    <span>This is a message</span>
-    <template #footer>
-        <div class="dialog-footer">
-            <el-button @click="dialogVisible = false">Cancel</el-button>
-            <el-button type="primary" @click="dialogVisible = false"> Confirm </el-button>
-        </div>
-    </template>
-</el-dialog>
+<el-affix :offset="120">
+    <el-button type="primary">Offset top 120px</el-button>
+</el-affix>

@@ -128,6 +128,11 @@ const el_popconfirm_1 = __importDefault(require("./components/el-popconfirm"));
 const el_popover_1 = __importDefault(require("./components/el-popover"));
 const el_tooltip_1 = __importDefault(require("./components/el-tooltip"));
 const el_divider_1 = __importDefault(require("./components/el-divider"));
+const el_backtop_1 = __importDefault(require("./components/el-backtop"));
+const el_dropdown_1 = __importDefault(require("./components/el-dropdown"));
+const el_input_tag_1 = __importDefault(require("./components/el-input-tag"));
+const el_anchor_link_1 = __importDefault(require("./components/el-anchor-link"));
+const el_anchor_1 = __importDefault(require("./components/el-anchor"));
 function activate(context) {
     context.subscriptions.push(vscode.languages.registerCompletionItemProvider('html', {
         provideCompletionItems(document, position) {
@@ -156,6 +161,7 @@ function activate(context) {
                 el_form_item_1.default,
                 el_form_1.default,
                 el_input_number_1.default,
+                el_input_tag_1.default,
                 el_input_1.default,
                 el_mention_1.default,
                 el_radio_group_1.default,
@@ -206,8 +212,12 @@ function activate(context) {
                 el_statistic_1.default,
                 el_segmented_1.default,
                 el_affix_1.default,
+                el_anchor_link_1.default,
+                el_anchor_1.default,
+                el_backtop_1.default,
                 el_breadcrumb_item_1.default,
                 el_breadcrumb_1.default,
+                el_dropdown_1.default,
                 el_menu_item_group_1.default,
                 el_sub_menu_1.default,
                 el_menu_1.default,
