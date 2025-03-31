@@ -52,102 +52,100 @@
 
 | 序号 |    触发代码    | 组件名称          | 符号 |
 | :--- | :------------: | :---------------- | :--- |
-| 2    |  `el-button`   | Button 按钮       | ⚡   |
-| 3    | `el-container` | Container 容器    | ⚡   |
-| 4    |  `el-header`   | Header 页头       | ⚡   |
-| 6    |   `el-aside`   | Aside 侧边栏      | ⚡   |
-| 6    |   `el-main`    | Main 主要区域容器 | ⚡   |
-| 5    |  `el-footer`   | Footer 页脚       | ⚡   |
+| 1    |  `el-button`   | Button 按钮       | ⚡   |
+| 2    | `el-container` | Container 容器    | ⚡   |
+| 3    |  `el-header`   | Header 页头       | ⚡   |
+| 4    |   `el-aside`   | Aside 侧边栏      | ⚡   |
+| 5    |   `el-main`    | Main 主要区域容器 | ⚡   |
+| 6    |  `el-footer`   | Footer 页脚       | ⚡   |
 | 7    |   `el-icon`    | Icon 图标         | ⚡   |
-| 34   |    `el-row`    | Row 行            | ⚡   |
-| 35   |    `el-col`    | Col 列            | ⚡   |
-| 8    |   `el-link`    | Link 链接         | ⚡   |
-| 9    |   `el-text`    | Text 文本         | ⚡   |
-| 10   | `el-scrollbar` | Scrollbar 滚动条  | ⚡   |
-| 11   |   `el-space`   | Space 间距        | ⚡   |
+| 8    |    `el-row`    | Row 行            | ⚡   |
+| 9    |    `el-col`    | Col 列            | ⚡   |
+| 10   |   `el-link`    | Link 链接         | ⚡   |
+| 11   |   `el-text`    | Text 文本         | ⚡   |
+| 12   | `el-scrollbar` | Scrollbar 滚动条  | ⚡   |
+| 13   |   `el-space`   | Space 间距        | ⚡   |
 
 ### Form 表单组件
 
 | 序号 |     触发代码      | 组件名称                        | 符号 |
 | :--- | :---------------: | :------------------------------ | :--- |
-| 12   | `el-autocomplete` | Autocomplete 自动补全输入框     | ⚡   |
-| 14   |   `el-cascader`   | Cascader 级联选择器             | ⚡   |
-| 17   |   `el-checkbox`   | Checkbox 多选框                 | ⚡   |
-| 15   | `el-color-picker` | Color Picker 颜色选择器         | ⚡   |
-| 18   | `el-date-picker`  | DatePicker 日期选择器           | ⚡   |
-| 20   |     `el-form`     | Form 表单                       | ⚡   |
-| 22   |    `el-input`     | Input 输入框                    | ⚡   |
-| 21   | `el-input-number` | Input Number 数字输入框         | ⚡   |
-| 21   |  `el-input-tag`   | Input Tag 标签输入框            | ⚡   |
-| 23   |   `el-mention`    | Mention 提及                    | ⚡   |
-| 26   |    `el-radio`     | Radio 单选框                    | ⚡   |
-| 27   |     `el-rate`     | Rate 评分                       | ⚡   |
-| 29   |    `el-select`    | Select 选择器                   | ⚡   |
-| 28   |  `el-select-v2`   | Virtualized Select 虚拟化选择器 | ⚡   |
-| 36   |    `el-slider`    | Slider 滑块                     | ⚡   |
-| 37   |    `el-switch`    | Switch 开关                     | ⚡   |
-| 38   | `el-time-picker`  | Time Picker 时间选择器          | ⚡   |
-| 39   | `el-time-select`  | Time Select 时间选择            | ⚡   |
-| 40   |   `el-transfer`   | Transfer 穿梭框                 | ⚡   |
-| 41   | `el-tree-select`  | TreeSelect 树形选择             | ⚡   |
-| 42   |    `el-upload`    | Upload 上传                     | ⚡   |
+| 1    | `el-autocomplete` | Autocomplete 自动补全输入框     | ⚡   |
+| 2    |   `el-cascader`   | Cascader 级联选择器             | ⚡   |
+| 3    |   `el-checkbox`   | Checkbox 多选框                 | ⚡   |
+| 4    | `el-color-picker` | Color Picker 颜色选择器         | ⚡   |
+| 5    | `el-date-picker`  | DatePicker 日期选择器           | ⚡   |
+| 6    |     `el-form`     | Form 表单                       | ⚡   |
+| 7    |    `el-input`     | Input 输入框                    | ⚡   |
+| 8    | `el-input-number` | Input Number 数字输入框         | ⚡   |
+| 9    |  `el-input-tag`   | Input Tag 标签输入框            | ⚡   |
+| 10   |   `el-mention`    | Mention 提及                    | ⚡   |
+| 11   |    `el-radio`     | Radio 单选框                    | ⚡   |
+| 12   |     `el-rate`     | Rate 评分                       | ⚡   |
+| 13   |    `el-select`    | Select 选择器                   | ⚡   |
+| 14   |  `el-select-v2`   | Virtualized Select 虚拟化选择器 | ⚡   |
+| 15   |    `el-slider`    | Slider 滑块                     | ⚡   |
+| 16   |    `el-switch`    | Switch 开关                     | ⚡   |
+| 17   | `el-time-picker`  | Time Picker 时间选择器          | ⚡   |
+| 18   | `el-time-select`  | Time Select 时间选择            | ⚡   |
+| 19   |   `el-transfer`   | Transfer 穿梭框                 | ⚡   |
+| 20   | `el-tree-select`  | TreeSelect 树形选择             | ⚡   |
+| 21   |    `el-upload`    | Upload 上传                     | ⚡   |
 
 ### Data 数据展示
 
 | 序号 |     触发代码      | 组件名称                     | 符号 |
 | :--- | :---------------: | :--------------------------- | :--- |
-| 43   |    `el-avatar`    | Avatar 头像                  | ⚡   |
-| 44   |    `el-badge`     | Badge 徽标                   | ⚡   |
-| 45   |   `el-calendar`   | Calendar 日历                | ⚡   |
-| 46   |     `el-card`     | Card 卡片                    | ⚡   |
-| 48   |   `el-carousel`   | Carousel 走马灯              | ⚡   |
-| 33   |   `el-collapse`   | Collapse 折叠面板            | ⚡   |
-| 50   | `el-descriptions` | Descriptions 描述列表        | ⚡   |
-| 51   |    `el-empty`     | Empty 空状态                 | ⚡   |
-| 53   |    `el-image`     | Image 图片                   | ⚡   |
-| 54   |  `el-pagination`  | Pagination 分页              | ⚡   |
-| 55   |   `el-progress`   | Progress 进度条              | ⚡   |
-| 56   |    `el-result`    | Result 结果                  | ⚡   |
-| 58   |   `el-skeleton`   | Skeleton 骨架                | ⚡   |
-| 61   |    `el-table`     | Table 表格                   | ⚡   |
-| 59   |   `el-table-v2`   | Virtualized Table 虚拟化表格 | ⚡   |
-| 63   |     `el-tag`      | Tag 标签                     | ⚡   |
-| 64   |   `el-timeline`   | Timeline 时间线              | ⚡   |
-| 66   |     `el-tour`     | Tour 漫游式引导              | ⚡   |
-| 67   |     `el-tree`     | Tree 树形控件                | ⚡   |
-| 68   |   `el-tree-v2`    | Tree V2 虚拟化树形控件       | ⚡   |
-| 69   |  `el-statistic`   | Statistic 统计组件           | ⚡   |
-| 70   |  `el-segmented`   | Segmented 分段控制器         | ⚡   |
+| 1    |    `el-avatar`    | Avatar 头像                  | ⚡   |
+| 2    |    `el-badge`     | Badge 徽标                   | ⚡   |
+| 3    |   `el-calendar`   | Calendar 日历                | ⚡   |
+| 4    |     `el-card`     | Card 卡片                    | ⚡   |
+| 5    |   `el-carousel`   | Carousel 走马灯              | ⚡   |
+| 6    |   `el-collapse`   | Collapse 折叠面板            | ⚡   |
+| 7    | `el-descriptions` | Descriptions 描述列表        | ⚡   |
+| 8    |    `el-empty`     | Empty 空状态                 | ⚡   |
+| 9    |    `el-image`     | Image 图片                   | ⚡   |
+| 10   |  `el-pagination`  | Pagination 分页              | ⚡   |
+| 11   |   `el-progress`   | Progress 进度条              | ⚡   |
+| 12   |    `el-result`    | Result 结果                  | ⚡   |
+| 13   |   `el-skeleton`   | Skeleton 骨架                | ⚡   |
+| 14   |    `el-table`     | Table 表格                   | ⚡   |
+| 15   |   `el-table-v2`   | Virtualized Table 虚拟化表格 | ⚡   |
+| 16   |     `el-tag`      | Tag 标签                     | ⚡   |
+| 17   |   `el-timeline`   | Timeline 时间线              | ⚡   |
+| 18   |     `el-tour`     | Tour 漫游式引导              | ⚡   |
+| 19   |     `el-tree`     | Tree 树形控件                | ⚡   |
+| 20   |   `el-tree-v2`    | Tree V2 虚拟化树形控件       | ⚡   |
+| 21   |  `el-statistic`   | Statistic 统计组件           | ⚡   |
+| 22   |  `el-segmented`   | Segmented 分段控制器         | ⚡   |
 
 ### Navigation 导航
 
 | 序号 |     触发代码     | 组件名称          | 符号 |
 | :--- | :--------------: | :---------------- | :--- |
-| 71   |    `el-affix`    | Affix 固钉        | ⚡   |
-| 71   |   `el-anchor`    | Anchor 锚点       | ⚡   |
-| 71   |   `el-backtop`   | Backtop 回到顶部  | ⚡   |
-| 73   | `el-breadcrumb`  | Breadcrumb 面包屑 | ⚡   |
-| 73   |  `el-dropdown`   | Dropdown 下拉菜单 | ⚡   |
-| 76   |    `el-menu`     | Menu 菜单         | ⚡   |
-| 77   | `el-page-header` | PageHeader 页头   | ⚡   |
-| 78   |    `el-steps`    | Steps 步骤条      | ⚡   |
-| 81   |    `el-tabs`     | Tabs 标签页       | ⚡   |
+| 1    |    `el-affix`    | Affix 固钉        | ⚡   |
+| 2    |   `el-anchor`    | Anchor 锚点       | ⚡   |
+| 3    |   `el-backtop`   | Backtop 回到顶部  | ⚡   |
+| 4    | `el-breadcrumb`  | Breadcrumb 面包屑 | ⚡   |
+| 5    |  `el-dropdown`   | Dropdown 下拉菜单 | ⚡   |
+| 6    |    `el-menu`     | Menu 菜单         | ⚡   |
+| 7    | `el-page-header` | PageHeader 页头   | ⚡   |
+| 8    |    `el-steps`    | Steps 步骤条      | ⚡   |
+| 9    |    `el-tabs`     | Tabs 标签页       | ⚡   |
 
 ### Feedback 反馈组件
 
 | 序号 |    触发代码     | 组件名称              | 符号 |
 | :--- | :-------------: | :-------------------- | :--- |
-| 82   |   `el-alert`    | Alert 提示            | ⚡   |
-| 83   |   `el-dialog`   | Dialog 对话框         | ⚡   |
-| 84   |   `el-drawer`   | Drawer 抽屉           | ⚡   |
-| 85   | `el-popconfirm` | Popconfirm 气泡确认框 | ⚡   |
-| 86   |  `el-popover`   | Popover 弹出框        | ⚡   |
-| 87   |  `el-tooltip`   | Tooltip 文字提示      | ⚡   |
+| 1    |   `el-alert`    | Alert 提示            | ⚡   |
+| 2    |   `el-dialog`   | Dialog 对话框         | ⚡   |
+| 3    |   `el-drawer`   | Drawer 抽屉           | ⚡   |
+| 4    | `el-popconfirm` | Popconfirm 气泡确认框 | ⚡   |
+| 5    |  `el-popover`   | Popover 弹出框        | ⚡   |
+| 6    |  `el-tooltip`   | Tooltip 文字提示      | ⚡   |
 
 ### Others 其他
 
 | 序号 |   触发代码   | 组件名称       | 符号 |
 | :--- | :----------: | :------------- | :--- |
-| 88   | `el-divider` | Divider 分割线 | ⚡   |
-
-<br />
+| 1    | `el-divider` | Divider 分割线 | ⚡   |
