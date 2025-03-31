@@ -83,6 +83,13 @@ import ElStep from './components/el-step';
 import ElSteps from './components/el-steps';
 import ElTabPane from './components/el-tab-pane';
 import ElTabs from './components/el-tabs';
+import ElAlert from './components/el-alert';
+import ElDialog from './components/el-dialog';
+import ElDrawer from './components/el-drawer';
+import ElPopconfirm from './components/el-popconfirm';
+import ElPopover from './components/el-popover';
+import ElTooltip from './components/el-tooltip';
+import ElDivider from './components/el-divider';
 
 export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(
@@ -174,7 +181,14 @@ export function activate(context: vscode.ExtensionContext) {
                         ElSteps,
                         ElStep,
                         ElTabPane,
-                        ElTabs
+                        ElTabs,
+                        ElAlert,
+                        ElDialog,
+                        ElDrawer,
+                        ElPopconfirm,
+                        ElPopover,
+                        ElTooltip,
+                        ElDivider
                     ];
 
                     /**
